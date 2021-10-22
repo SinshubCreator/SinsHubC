@@ -22,7 +22,7 @@ load.MouseButton1Down:connect(function()
     elseif game.PlaceId == 734159876 then
         loadstring(http_request({Url="https://raw.githubusercontent.com/alphaalt0409/WEIRDAPPLEBEEPANEL/main/weirdapplebee.lua",Method="GET"}).Body)()
     elseif game.PlaceId == oyunid then
-        (script)
+        
     end
 end)
 
