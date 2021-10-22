@@ -23,7 +23,8 @@ load.MouseButton1Down:connect(function()
         loadstring(game:GetObjects("rbxassetid://3623753581")[1].Source)()
     elseif game.PlaceId == 6875469709 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/SinshubCreator/Strongest-Punch-Simulator/main/sinspunch"))()
-
+    elseif game.PlaceId == 142823291 then 
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/xennyy/Xenny-Ware/main/loader.lua"))()
     end
     loader:Destroy()
 end)
