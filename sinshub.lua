@@ -21,6 +21,9 @@ load.MouseButton1Down:connect(function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ZinityDrops/OwlHubLink/master/OwlHubBack.lua"))();
     elseif game.PlaceId == 734159876 then
         loadstring(game:GetObjects("rbxassetid://3623753581")[1].Source)()
+    elseif game.PlaceId == 6875469709 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/SinshubCreator/Strongest-Punch-Simulator/main/sinspunch"))()
+
     end
     loader:Destroy()
 end)
