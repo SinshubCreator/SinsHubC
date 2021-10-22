@@ -1,14 +1,3 @@
- local dictionaryTable = {
-	Monday = 1,
-	Tuesday = 2,
-	Wednesday = 3
-}
--- Output value of 'Tuesday' key
-print(dictionaryTable.Tuesday)
--- Clear 'Tuesday' key
-dictionaryTable.Tuesday = nil
--- Output value of key again
-print(dictionaryTable.Tuesday)
 
 
 local loader = Instance.new("ScreenGui")
