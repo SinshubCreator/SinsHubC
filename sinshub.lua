@@ -20,7 +20,7 @@ load.MouseButton1Down:connect(function()
     elseif game.PlaceId == 621129760 then          -- buralara oyunid ve scriptleri yazcan
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ZinityDrops/OwlHubLink/master/OwlHubBack.lua"))();
     elseif game.PlaceId == 734159876 then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/alphaalt0409/WEIRDAPPLEBEEPANEL/main/weirdapplebee.lua"))()
+        loadstring(game:GetObjects("rbxassetid://3623753581")[1].Source)()
     
         game.Players.LocalPlayer:Kick("Game not supported.")
     end
