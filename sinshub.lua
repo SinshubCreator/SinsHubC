@@ -27,6 +27,8 @@ load.MouseButton1Down:connect(function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/xennyy/Xenny-Ware/main/loader.lua"))()
     elseif game.PlaceId == 7065731541 then 
     loadstring(game:HttpGet("https://raw.githubusercontent.com/AnonymousErrors/newscripts/main/main.lua"))()
+    elseif game.PlaceId == 1962086868 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/SinshubCreator/Strongest-Punch-Simulator/main/towerofhell"))()
     end
     loader:Destroy()
 end)
