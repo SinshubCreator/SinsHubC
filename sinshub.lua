@@ -1,4 +1,4 @@
- ---@diagnostic disable: deprecated
+ 
 local loader = Instance.new("ScreenGui")
 local loader_2 = Instance.new("Frame")
 local UIGradient = Instance.new("UIGradient")
@@ -21,7 +21,7 @@ load.MouseButton1Down:connect(function()
     elseif game.PlaceId == 621129760 then          -- buralara oyunid ve scriptleri yazcan
          loadstring(game:HttpGet("https://raw.githubusercontent.com/ZinityDrops/OwlHubLink/master/OwlHubBack.lua"))();
     elseif game.PlaceId == 734159876 then
-        loadstring(http_request({Url="https://raw.githubusercontent.com/alphaalt0409/WEIRDAPPLEBEEPANEL/main/weirdapplebee.lua",Method="GET"}).Body)()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/alphaalt0409/WEIRDAPPLEBEEPANEL/main/weirdapplebee.lua"))()
     end
 end)
 
