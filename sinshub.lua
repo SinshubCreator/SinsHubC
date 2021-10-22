@@ -1,3 +1,4 @@
+ ---@diagnostic disable: deprecated
 local loader = Instance.new("ScreenGui")
 local loader_2 = Instance.new("Frame")
 local UIGradient = Instance.new("UIGradient")
