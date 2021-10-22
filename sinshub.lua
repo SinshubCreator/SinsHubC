@@ -21,8 +21,6 @@ load.MouseButton1Down:connect(function()
          loadstring(game:HttpGet("https://raw.githubusercontent.com/ZinityDrops/OwlHubLink/master/OwlHubBack.lua"))();
     elseif game.PlaceId == 734159876 then
         loadstring(http_request({Url="https://raw.githubusercontent.com/alphaalt0409/WEIRDAPPLEBEEPANEL/main/weirdapplebee.lua",Method="GET"}).Body)()
-    elseif game.PlaceId == oyunid then
-        
     end
 end)
 
