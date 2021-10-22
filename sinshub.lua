@@ -29,6 +29,8 @@ load.MouseButton1Down:connect(function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/AnonymousErrors/newscripts/main/main.lua"))()
     elseif game.PlaceId == 1962086868 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/SinshubCreator/Strongest-Punch-Simulator/main/towerofhell"))()
+    elseif game.PlaceId == 537413528 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/SinshubCreator/Strongest-Punch-Simulator/main/Build%20A%20Boat"))()
     end
     loader:Destroy()
 end)
