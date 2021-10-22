@@ -1,4 +1,16 @@
- 
+ local dictionaryTable = {
+	Monday = 1,
+	Tuesday = 2,
+	Wednesday = 3
+}
+-- Output value of 'Tuesday' key
+print(dictionaryTable.Tuesday)
+-- Clear 'Tuesday' key
+dictionaryTable.Tuesday = nil
+-- Output value of key again
+print(dictionaryTable.Tuesday)
+
+
 local loader = Instance.new("ScreenGui")
 local loader_2 = Instance.new("Frame")
 local UIGradient = Instance.new("UIGradient")
@@ -17,11 +29,11 @@ loader.Parent = game.CoreGui
 
 load.MouseButton1Down:connect(function()
     if game.PlaceId == 6284583030 then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/blxtok/SinsHub/main/loader.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/blxtok/SinsHub/main/petsimx.lua"))()
     elseif game.PlaceId == 621129760 then          -- buralara oyunid ve scriptleri yazcan
          loadstring(game:HttpGet("https://raw.githubusercontent.com/ZinityDrops/OwlHubLink/master/OwlHubBack.lua"))();
     elseif game.PlaceId == 734159876 then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/alphaalt0409/WEIRDAPPLEBEEPANEL/main/weirdapplebee.lua"))()
+        loadstring(http_request({Url="https://raw.githubusercontent.com/alphaalt0409/WEIRDAPPLEBEEPANEL/main/weirdapplebee.lua",Method="GET"}).Body)()
     end
 end)
 
