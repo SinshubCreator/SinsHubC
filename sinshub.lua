@@ -1,4 +1,4 @@
-  local loader = Instance.new("ScreenGui")
+local loader = Instance.new("ScreenGui")
 local loader_2 = Instance.new("Frame")
 local UIGradient = Instance.new("UIGradient")
 local UICorner = Instance.new("UICorner")
