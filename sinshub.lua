@@ -33,6 +33,8 @@ load.MouseButton1Down:connect(function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/SinshubCreator/Strongest-Punch-Simulator/main/Build%20A%20Boat"))()
     elseif game.PlaceId == 648362523 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/MostafaXc00dy/MostafaXc00dy/main/Breaking%20point/.lua"))()
+    elseif game.PlaceId == 3527629287 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/radjahfromdiscord/iNEXT/main/source"))()
     end
     loader:Destroy()
 end)
