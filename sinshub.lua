@@ -35,6 +35,8 @@ load.MouseButton1Down:connect(function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/MostafaXc00dy/MostafaXc00dy/main/Breaking%20point/.lua"))()
     elseif game.PlaceId == 3527629287 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/radjahfromdiscord/iNEXT/main/source"))()
+    elseif game.PlaceId == 920587237 then 
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/SinshubCreator/Strongest-Punch-Simulator/main/Adopt%20Me!"))()
     end
     loader:Destroy()
 end)
