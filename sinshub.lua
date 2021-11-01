@@ -64,8 +64,8 @@ load.MouseButton1Down:connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/SinshubCreator/Strongest-Punch-Simulator/main/Adopt%20Me!"))()
 	elseif game.PlaceId == 13822889 then 
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/SinshubCreator/Strongest-Punch-Simulator/main/Lumber"))()
-        elseif game.PlaceId == 6407649031 then
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/SinshubCreator/Strongest-Punch-Simulator/main/No-Scope%20ARCADE"))()
+        elseif game.PlaceId == 3956818381 then
+                 loadstring(game:HttpGet("https://raw.githubusercontent.com/HydraVirgo/ninjalegendsfreegui/main/obfusc", true))()
 		
         else        
                     game.Players.LocalPlayer:Kick("Game not supported. | https://discord.gg/KYK6Vmfaax")
