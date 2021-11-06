@@ -82,8 +82,9 @@ load.MouseButton1Down:connect(function()
                  loadstring(game:HttpGet("https://raw.githubusercontent.com/SinshubCreator/Strongest-Punch-Simulator/main/Car%20Dealership"))()
         elseif game.PlaceId == 893973440 then
                  loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
-        elseif game.PlaceId == 6484864709 then
-                 loadstring(game:HttpGet("https://raw.githubusercontent.com/SinshubCreator/Strongest-Punch-Simulator/main/Gym%20Tycoon"))();
+        elseif game.PlaceId == 6447798030 then
+                 loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
+                 
                      game.Players.LocalPlayer:Kick("Game Not Supported!")
 	end
 	loader:Destroy()
