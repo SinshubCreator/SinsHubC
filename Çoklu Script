@@ -1,4 +1,7 @@
+ -- Gui to Lua
+-- Version: 3.2
 
+-- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
@@ -12,6 +15,9 @@ local DHX = Instance.new("TextButton")
 local Scripts = Instance.new("TextButton")
 local TextLabel_4 = Instance.new("TextLabel")
 local X = Instance.new("TextButton")
+local antiafk = Instance.new("TextButton")
+local Discord = Instance.new("TextButton")
+local TextLabel_5 = Instance.new("TextLabel")
 
 --Properties:
 
@@ -21,7 +27,7 @@ main.Name = "main"
 main.Parent = ScreenGui
 main.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
 main.BorderColor3 = Color3.fromRGB(65, 65, 65)
-main.Position = UDim2.new(0.492, 0,0.499, 0)
+main.Position = UDim2.new(0.358436167, 0, 0.285132378, 0)
 main.Size = UDim2.new(0, 401, 0, 285)
 main.Active = true
 main.Draggable = true
@@ -123,8 +129,7 @@ Scripts.Font = Enum.Font.Ubuntu
 Scripts.Text = "< > Scripts"
 Scripts.TextColor3 = Color3.fromRGB(255, 255, 255)
 Scripts.TextSize = 25.000
-Scripts.MouseButton1Down:connect(function()
-	setclick(Scripts)
+Scripts.MouseButton1Click:connect(function()
 end)
 
 TextLabel_4.Parent = main
@@ -150,3 +155,41 @@ X.TextSize = 30.000
 X.MouseButton1Down:connect(function()
 	ScreenGui:Destroy()
 end)
+
+antiafk.Name = "antiafk"
+antiafk.Parent = main
+antiafk.BackgroundColor3 = Color3.fromRGB(83, 83, 83)
+antiafk.BorderColor3 = Color3.fromRGB(83, 83, 83)
+antiafk.Position = UDim2.new(0.326683283, 0, 0.610526264, 0)
+antiafk.Size = UDim2.new(0, 256, 0, 25)
+antiafk.Font = Enum.Font.Ubuntu
+antiafk.Text = "Anti AFK"
+antiafk.TextColor3 = Color3.fromRGB(255, 255, 255)
+antiafk.TextSize = 25.000
+antiafk.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/SinshubCreator/SinsHubb/main/antiafk"))()
+end)
+
+Discord.Name = "Discord"
+Discord.Parent = main
+Discord.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+Discord.BorderColor3 = Color3.fromRGB(43, 43, 43)
+Discord.Position = UDim2.new(-0.00498753134, 0, 0.866666675, 0)
+Discord.Size = UDim2.new(0, 114, 0, 38)
+Discord.Font = Enum.Font.Ubuntu
+Discord.Text = "Discord"
+Discord.TextColor3 = Color3.fromRGB(255, 255, 255)
+Discord.TextSize = 25.000
+Discord.MouseButton1Down:connect(function()
+	    setclipboard('https://discord.gg/T7hTaTg5TV')
+end)
+
+TextLabel_5.Parent = main
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+TextLabel_5.BorderColor3 = Color3.fromRGB(43, 43, 43)
+TextLabel_5.Position = UDim2.new(0.0374064818, 0, 0.799999952, 0)
+TextLabel_5.Size = UDim2.new(0, 79, 0, 19)
+TextLabel_5.Font = Enum.Font.Ubuntu
+TextLabel_5.Text = "Copy"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 25.000
