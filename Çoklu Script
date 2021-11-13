@@ -1,0 +1,115 @@
+
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local ezpets = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local ShinyTool = Instance.new("TextButton")
+local X = Instance.new("TextButton")
+local voidhub = Instance.new("TextButton")
+local AntiAfk = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+main.BorderColor3 = Color3.fromRGB(43, 43, 43)
+main.Position = UDim2.new(0.304409683, 0, 0.179226071, 0)
+main.Size = UDim2.new(0, 274, 0, 229)
+main.Active = true 
+main.Draggable = true
+
+TextLabel.Parent = main
+TextLabel.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+TextLabel.BorderColor3 = Color3.fromRGB(43, 43, 43)
+TextLabel.Position = UDim2.new(0, 0, 3.7252903e-09, 0)
+TextLabel.Size = UDim2.new(0, 121, 0, 41)
+TextLabel.Font = Enum.Font.Ubuntu
+TextLabel.Text = "SinsHub"
+TextLabel.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel.TextSize = 30.000
+TextLabel.TextWrapped = true
+
+ezpets.Name = "ezpets"
+ezpets.Parent = main
+ezpets.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+ezpets.BorderColor3 = Color3.fromRGB(43, 43, 43)
+ezpets.Position = UDim2.new(0.0353697762, 0, 0.271653533, 0)
+ezpets.Size = UDim2.new(0, 80, 0, 46)
+ezpets.Font = Enum.Font.Ubuntu
+ezpets.Text = "ezpets"
+ezpets.TextColor3 = Color3.fromRGB(255, 255, 255)
+ezpets.TextSize = 25.000 
+ezpets.MouseButton1Down:connect (function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/TurfuGoldy/GoldenScripts/main/EzPets.lua", true))()
+end)
+
+TextLabel_2.Parent = main
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+TextLabel_2.BorderColor3 = Color3.fromRGB(43, 43, 43)
+TextLabel_2.Position = UDim2.new(0.775424778, 0, 0, 0)
+TextLabel_2.Size = UDim2.new(0, 61, 0, 28)
+TextLabel_2.Font = Enum.Font.Ubuntu
+TextLabel_2.Text = "No Key"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 0)
+TextLabel_2.TextSize = 15.000
+
+ShinyTool.Name = "Shiny Tool"
+ShinyTool.Parent = main
+ShinyTool.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+ShinyTool.BorderColor3 = Color3.fromRGB(43, 43, 43)
+ShinyTool.Position = UDim2.new(0.34405148, 0, 0.271653533, 0)
+ShinyTool.Size = UDim2.new(0, 80, 0, 46)
+ShinyTool.Font = Enum.Font.Ubuntu
+ShinyTool.Text = "shiny"
+ShinyTool.TextColor3 = Color3.fromRGB(255, 255, 255)
+ShinyTool.TextSize = 25.000
+ShinyTool.MouseButton1Down:connect (function() 
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/Shiny-Tool/main/ShinyTool.lua"))()
+end)
+
+X.Name = "X"
+X.Parent = main
+X.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+X.BorderColor3 = Color3.fromRGB(43, 43, 43)
+X.Position = UDim2.new(0.915477812, 0, 0.882848561, 0)
+X.Size = UDim2.new(0, 23, 0, 26)
+X.Font = Enum.Font.Ubuntu
+X.Text = "X"
+X.TextColor3 = Color3.fromRGB(255, 0, 0)
+X.TextSize = 25.000
+X.MouseButton1Down:connect(function()
+	ScreenGui:Destroy()
+end)
+
+voidhub.Name = "voidhub"
+voidhub.Parent = main
+voidhub.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+voidhub.BorderColor3 = Color3.fromRGB(43, 43, 43)
+voidhub.Position = UDim2.new(0.662560642, 0, 0.26806885, 0)
+voidhub.Size = UDim2.new(0, 80, 0, 46)
+voidhub.Font = Enum.Font.Ubuntu
+voidhub.Text = "voidhub"
+voidhub.TextColor3 = Color3.fromRGB(255, 255, 255)
+voidhub.TextSize = 25.000
+voidhub.MouseButton1Down:connect (function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wind596/VoidHub/main/WiningDediy", true))()
+end)
+
+AntiAfk.Name = "Anti-Afk"
+AntiAfk.Parent = main
+AntiAfk.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+AntiAfk.BorderColor3 = Color3.fromRGB(43, 43, 43)
+AntiAfk.Position = UDim2.new(0.311639041, 0, 0.520454705, 0)
+AntiAfk.Size = UDim2.new(0, 97, 0, 61)
+AntiAfk.Font = Enum.Font.Ubuntu
+AntiAfk.Text = "Anti-AFK"
+AntiAfk.TextColor3 = Color3.fromRGB(255, 255, 0)
+AntiAfk.TextSize = 25.000
+AntiAfk.MouseButton1Down:connect (function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/SinshubCreator/SinsHubb/main/antiafk", true))()
+end)
