@@ -1,7 +1,4 @@
- -- Gui to Lua
--- Version: 3.2
 
--- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
@@ -14,18 +11,19 @@ local ShinyTool = Instance.new("TextButton")
 local DHX = Instance.new("TextButton")
 local Scripts = Instance.new("TextButton")
 local TextLabel_4 = Instance.new("TextLabel")
+local X = Instance.new("TextButton")
 
 --Properties:
 
-ScreenGui.Parent = game.CoreGui
+ScreenGui.Parent = game.Workspace
 
 main.Name = "main"
 main.Parent = ScreenGui
 main.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
 main.BorderColor3 = Color3.fromRGB(65, 65, 65)
-main.Position = UDim2.new(0.353339314, 0, 0.118126273, 0)
+main.Position = UDim2.new(0.295235336, 0, 0.179226071, 0)
 main.Size = UDim2.new(0, 401, 0, 285)
-main.Active = true 
+main.Active = true
 main.Draggable = true
 
 TextLabel.Parent = main
@@ -86,7 +84,7 @@ voidhub.TextSize = 25.000
 voidhub.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wind596/VoidHub/main/WiningDediy", true))()
 end)
-       
+
 ShinyTool.Name = "ShinyTool"
 ShinyTool.Parent = main
 ShinyTool.BackgroundColor3 = Color3.fromRGB(83, 83, 83)
@@ -126,6 +124,7 @@ Scripts.Text = "< > Scripts"
 Scripts.TextColor3 = Color3.fromRGB(255, 255, 255)
 Scripts.TextSize = 25.000
 Scripts.MouseButton1Down:connect(function()
+	setclick(Scripts)
 end)
 
 TextLabel_4.Parent = main
@@ -137,3 +136,17 @@ TextLabel_4.Font = Enum.Font.SourceSans
 TextLabel_4.Text = ""
 TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_4.TextSize = 14.000
+
+X.Name = "X"
+X.Parent = main
+X.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+X.BorderColor3 = Color3.fromRGB(65, 65, 65)
+X.Position = UDim2.new(0.925187051, 0, 0.884210527, 0)
+X.Size = UDim2.new(0, 30, 0, 33)
+X.Font = Enum.Font.SourceSans
+X.Text = "X"
+X.TextColor3 = Color3.fromRGB(255, 0, 0)
+X.TextSize = 30.000
+X.MouseButton1Down:connect(function()
+	ScreenGui:Destroy()
+end)
