@@ -21,7 +21,13 @@ local DHX = Instance.new("TextButton")
 local antiafk = Instance.new("TextButton")
 local voidhub = Instance.new("TextButton")
 local TextLabel_4 = Instance.new("TextLabel")
+local credits1 = Instance.new("Frame")
+local creditstext = Instance.new("TextLabel")
+local discordnick = Instance.new("TextLabel")
 local TextLabel_5 = Instance.new("TextLabel")
+local uidesign = Instance.new("TextLabel")
+local version = Instance.new("TextLabel")
+local Credits = Instance.new("TextButton")
 
 --Properties:
 
@@ -31,8 +37,8 @@ main.Name = "main"
 main.Parent = ScreenGui
 main.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
 main.BorderColor3 = Color3.fromRGB(65, 65, 65)
-main.Position = UDim2.new(0.345184356, 0, 0.262729138, 0)
-main.Size = UDim2.new(0, 119, 0, 285)
+main.Position = UDim2.new(0.476682842, 0, 0.325865567, 0)
+main.Size = UDim2.new(0, 110, 0, 285)
 main.Active = true
 main.Draggable = true
 
@@ -50,8 +56,8 @@ TextLabel.TextWrapped = true
 TextLabel_2.Parent = TextLabel
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
 TextLabel_2.BorderColor3 = Color3.fromRGB(43, 43, 43)
-TextLabel_2.Position = UDim2.new(0, 0, 1.0869565, 0)
-TextLabel_2.Size = UDim2.new(0, 117, 0, 236)
+TextLabel_2.Position = UDim2.new(0, 0, 1.02173913, 0)
+TextLabel_2.Size = UDim2.new(0, 114, 0, 239)
 TextLabel_2.Font = Enum.Font.SourceSans
 TextLabel_2.Text = ""
 TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -61,22 +67,21 @@ Scripts.Name = "Scripts"
 Scripts.Parent = main
 Scripts.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
 Scripts.BorderColor3 = Color3.fromRGB(43, 43, 43)
-Scripts.Position = UDim2.new(-0.0133908913, 0, 0.210526317, 0)
-Scripts.Size = UDim2.new(0, 114, 0, 25)
+Scripts.Position = UDim2.new(0.016260162, 0, 0.200000003, 0)
+Scripts.Size = UDim2.new(0, 103, 0, 25)
 Scripts.Font = Enum.Font.Ubuntu
-Scripts.Text = "< > Scripts"
+Scripts.Text = " Scripts"
 Scripts.TextColor3 = Color3.fromRGB(255, 255, 255)
 Scripts.TextSize = 25.000
 Scripts.MouseButton1Down:connect(function()
-	scriptler.Visible = true 
+         scriptler.Visible = true
 end)
-
 
 TextLabel_3.Parent = main
 TextLabel_3.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
 TextLabel_3.BorderColor3 = Color3.fromRGB(43, 43, 43)
-TextLabel_3.Position = UDim2.new(-0.0124688279, 0, 0.161403507, 0)
-TextLabel_3.Size = UDim2.new(0, 120, 0, 3)
+TextLabel_3.Position = UDim2.new(-0.0212476775, 0, 0.157894731, 0)
+TextLabel_3.Size = UDim2.new(0, 114, 0, 3)
 TextLabel_3.Font = Enum.Font.SourceSans
 TextLabel_3.Text = ""
 TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -86,30 +91,32 @@ Discord.Name = "Discord"
 Discord.Parent = main
 Discord.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
 Discord.BorderColor3 = Color3.fromRGB(43, 43, 43)
-Discord.Position = UDim2.new(-0.00498753134, 0, 0.866666675, 0)
+Discord.Position = UDim2.new(-0.0212476924, 0, 0.866666675, 0)
 Discord.Size = UDim2.new(0, 114, 0, 38)
 Discord.Font = Enum.Font.Ubuntu
 Discord.Text = "Discord"
 Discord.TextColor3 = Color3.fromRGB(255, 255, 255)
 Discord.TextSize = 25.000
 Discord.MouseButton1Down:connect(function()
-	setclipboard('discord.gg/T7hTaTg5TV')
-	sinsnotif('"discord.gg/T7hTaTg5TV" copied to clipboard')
+         setclipboard('discord.gg/T7hTaTg5TV')
+         sinsnotif('"discord.gg/T7hTaTg5TV" copied to clipboard')
 end)
+
 
 scriptler.Name = "scriptler"
 scriptler.Parent = main
 scriptler.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
 scriptler.BorderColor3 = Color3.fromRGB(65, 65, 65)
-scriptler.Position = UDim2.new(0.950585604, 0, 0, 0)
-scriptler.Size = UDim2.new(0, 248, 0, 285)
+scriptler.Position = UDim2.new(0.926195145, 0, 0, 0)
+scriptler.Size = UDim2.new(0, 311, 0, 285)
+scriptler.Visible = false
 
 ezpets.Name = "ezpets"
 ezpets.Parent = scriptler
 ezpets.BackgroundColor3 = Color3.fromRGB(83, 83, 83)
 ezpets.BorderColor3 = Color3.fromRGB(83, 83, 83)
-ezpets.Position = UDim2.new(0.0351481289, 0, 0.251343727, 0)
-ezpets.Size = UDim2.new(0, 230, 0, 25)
+ezpets.Position = UDim2.new(0.0195434187, 0, 0.233799875, 0)
+ezpets.Size = UDim2.new(0, 298, 0, 22)
 ezpets.Font = Enum.Font.Ubuntu
 ezpets.Text = "EzPets"
 ezpets.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -122,8 +129,8 @@ ShinyTool.Name = "ShinyTool"
 ShinyTool.Parent = scriptler
 ShinyTool.BackgroundColor3 = Color3.fromRGB(83, 83, 83)
 ShinyTool.BorderColor3 = Color3.fromRGB(83, 83, 83)
-ShinyTool.Position = UDim2.new(0.0351481289, 0, 0.362609178, 0)
-ShinyTool.Size = UDim2.new(0, 230, 0, 25)
+ShinyTool.Position = UDim2.new(0.0227588527, 0, 0.348574132, 0)
+ShinyTool.Size = UDim2.new(0, 297, 0, 22)
 ShinyTool.Font = Enum.Font.Ubuntu
 ShinyTool.Text = "Shiny Tool"
 ShinyTool.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -136,22 +143,22 @@ DHX.Name = "DHX"
 DHX.Parent = scriptler
 DHX.BackgroundColor3 = Color3.fromRGB(83, 83, 83)
 DHX.BorderColor3 = Color3.fromRGB(83, 83, 83)
-DHX.Position = UDim2.new(0.0351481289, 0, 0.465054065, 0)
-DHX.Size = UDim2.new(0, 230, 0, 21)
+DHX.Position = UDim2.new(0.0227588527, 0, 0.461545289, 0)
+DHX.Size = UDim2.new(0, 297, 0, 22)
 DHX.Font = Enum.Font.Ubuntu
 DHX.Text = "DHX GUI"
 DHX.TextColor3 = Color3.fromRGB(255, 255, 255)
 DHX.TextSize = 25.000
 DHX.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/si1nnx/psxx/main/g"))()
+	     loadstring(game:HttpGet("https://raw.githubusercontent.com/si1nnx/psxx/main/g"))()
 end)
 
 antiafk.Name = "antiafk"
 antiafk.Parent = scriptler
 antiafk.BackgroundColor3 = Color3.fromRGB(83, 83, 83)
 antiafk.BorderColor3 = Color3.fromRGB(83, 83, 83)
-antiafk.Position = UDim2.new(0.0339633226, 0, 0.675580323, 0)
-antiafk.Size = UDim2.new(0, 230, 0, 25)
+antiafk.Position = UDim2.new(0.0227588527, 0, 0.666666687, 0)
+antiafk.Size = UDim2.new(0, 298, 0, 22)
 antiafk.Font = Enum.Font.Ubuntu
 antiafk.Text = "Anti AFK"
 antiafk.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -162,10 +169,10 @@ end)
 
 voidhub.Name = "voidhub"
 voidhub.Parent = scriptler
-voidhub.BackgroundColor3 = Color3.fromRGB(83, 83, 83)
-voidhub.BorderColor3 = Color3.fromRGB(83, 83, 83)
-voidhub.Position = UDim2.new(0.0350000001, 0, 0.563280702, 0)
-voidhub.Size = UDim2.new(0, 230, 0, 25)
+voidhub.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+voidhub.BorderColor3 = Color3.fromRGB(85, 85, 85)
+voidhub.Position = UDim2.new(0.0227588527, 0, 0.563280582, 0)
+voidhub.Size = UDim2.new(0, 297, 0, 22)
 voidhub.Font = Enum.Font.Ubuntu
 voidhub.Text = "VoidHub"
 voidhub.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -177,19 +184,84 @@ end)
 TextLabel_4.Parent = scriptler
 TextLabel_4.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
 TextLabel_4.BorderColor3 = Color3.fromRGB(65, 65, 65)
-TextLabel_4.Position = UDim2.new(0.361612916, 0, 0.0507193059, 0)
-TextLabel_4.Size = UDim2.new(0, 66, 0, 31)
+TextLabel_4.Position = UDim2.new(0.390551805, 0, 0.0963333398, 0)
+TextLabel_4.Size = UDim2.new(0, 66, 0, 20)
 TextLabel_4.Font = Enum.Font.Ubuntu
 TextLabel_4.Text = "Main"
 TextLabel_4.TextColor3 = Color3.fromRGB(255, 81, 0)
 TextLabel_4.TextSize = 30.000
 
-TextLabel_5.Parent = scriptler
-TextLabel_5.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
-TextLabel_5.BorderColor3 = Color3.fromRGB(65, 65, 65)
-TextLabel_5.Position = UDim2.new(0.00115646853, 0, 0.959491313, 0)
-TextLabel_5.Size = UDim2.new(0, 140, 0, 11)
-TextLabel_5.Font = Enum.Font.Ubuntu
-TextLabel_5.Text = "Thank you CursedHub!"
-TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+credits1.Name = "credits1"
+credits1.Parent = main
+credits1.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+credits1.BorderColor3 = Color3.fromRGB(65, 65, 65)
+credits1.Position = UDim2.new(1.0147084, 0, -0.003508772, 0)
+credits1.Size = UDim2.new(0, 265, 0, 285)
+
+creditstext.Name = "creditstext"
+creditstext.Parent = credits1
+creditstext.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+creditstext.BorderColor3 = Color3.fromRGB(65, 65, 65)
+creditstext.Position = UDim2.new(0.120754719, 0, 0.003508772, 0)
+creditstext.Size = UDim2.new(0, 200, 0, 50)
+creditstext.Font = Enum.Font.Ubuntu
+creditstext.Text = "Credits"
+creditstext.TextColor3 = Color3.fromRGB(0, 255, 247)
+creditstext.TextSize = 25.000
+
+discordnick.Name = "discordnick"
+discordnick.Parent = credits1
+discordnick.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+discordnick.BorderColor3 = Color3.fromRGB(65, 65, 65)
+discordnick.Position = UDim2.new(0.0792452842, 0, 0.252631575, 0)
+discordnick.Size = UDim2.new(0, 223, 0, 29)
+discordnick.Font = Enum.Font.Ubuntu
+discordnick.Text = "Discord:  YasinS#0001"
+discordnick.TextColor3 = Color3.fromRGB(255, 0, 0)
+discordnick.TextSize = 22.000
+
+TextLabel_5.Parent = credits1
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+TextLabel_5.BorderColor3 = Color3.fromRGB(43, 43, 43)
+TextLabel_5.Position = UDim2.new(0.000324983412, 0, 0.161403507, 0)
+TextLabel_5.Size = UDim2.new(0, 264, 0, 3)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = ""
+TextLabel_5.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_5.TextSize = 14.000
+
+uidesign.Name = "uidesign"
+uidesign.Parent = credits1
+uidesign.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+uidesign.BorderColor3 = Color3.fromRGB(65, 65, 65)
+uidesign.Position = UDim2.new(0.0792452842, 0, 0.392982453, 0)
+uidesign.Size = UDim2.new(0, 223, 0, 29)
+uidesign.Font = Enum.Font.Ubuntu
+uidesign.Text = "Uİ Design:  YasinS"
+uidesign.TextColor3 = Color3.fromRGB(255, 0, 0)
+uidesign.TextSize = 22.000
+
+version.Name = "version"
+version.Parent = credits1
+version.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+version.BorderColor3 = Color3.fromRGB(65, 65, 65)
+version.Position = UDim2.new(0.0792452842, 0, 0.684210539, 0)
+version.Size = UDim2.new(0, 223, 0, 29)
+version.Font = Enum.Font.Ubuntu
+version.Text = "Version: 3.1v"
+version.TextColor3 = Color3.fromRGB(255, 255, 255)
+version.TextSize = 22.000
+
+Credits.Name = "Credits"
+Credits.Parent = main
+Credits.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+Credits.BorderColor3 = Color3.fromRGB(43, 43, 43)
+Credits.Position = UDim2.new(0.0272727273, 0, 0.33684212, 0)
+Credits.Size = UDim2.new(0, 103, 0, 25)
+Credits.Font = Enum.Font.Ubuntu
+Credits.Text = "Credits"
+Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits.TextSize = 25.000
+Credits.MouseButton1Down:connect(function()
+          credits1.Visible = true
+end)
