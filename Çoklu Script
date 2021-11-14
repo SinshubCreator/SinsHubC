@@ -103,8 +103,6 @@ scriptler.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
 scriptler.BorderColor3 = Color3.fromRGB(65, 65, 65)
 scriptler.Position = UDim2.new(0.950585604, 0, 0, 0)
 scriptler.Size = UDim2.new(0, 248, 0, 285)
-scriptler.Active = true
-scriptler.Draggable = true
 
 ezpets.Name = "ezpets"
 ezpets.Parent = scriptler
