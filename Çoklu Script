@@ -1,22 +1,27 @@
- -- Gui to Lua
--- Version: 3.2
-
--- Instances:
+function sinsnotif(text)
+	wait(0.2)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Sins Hub"; 
+		Text = text; 
+		Duration = 5; 
+	})
+end
 
 local ScreenGui = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
 local TextLabel_2 = Instance.new("TextLabel")
-local TextLabel_3 = Instance.new("TextLabel")
-local ezpets = Instance.new("TextButton")
-local voidhub = Instance.new("TextButton")
-local ShinyTool = Instance.new("TextButton")
-local DHX = Instance.new("TextButton")
 local Scripts = Instance.new("TextButton")
+local TextLabel_3 = Instance.new("TextLabel")
+local Discord = Instance.new("TextButton")
+local Scriptler = Instance.new("Frame")
+local DHX = Instance.new("TextButton")
+local ezpets = Instance.new("TextButton")
 local TextLabel_4 = Instance.new("TextLabel")
+local ShinyTool = Instance.new("TextButton")
+local voidhub = Instance.new("TextButton")
 local X = Instance.new("TextButton")
 local antiafk = Instance.new("TextButton")
-local Discord = Instance.new("TextButton")
 local TextLabel_5 = Instance.new("TextLabel")
 
 --Properties:
@@ -53,72 +58,6 @@ TextLabel_2.Text = ""
 TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_2.TextSize = 14.000
 
-TextLabel_3.Parent = main
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
-TextLabel_3.BorderColor3 = Color3.fromRGB(65, 65, 65)
-TextLabel_3.Position = UDim2.new(0.47630924, 0, 0.0245614033, 0)
-TextLabel_3.Size = UDim2.new(0, 136, 0, 31)
-TextLabel_3.Font = Enum.Font.Ubuntu
-TextLabel_3.Text = "Main"
-TextLabel_3.TextColor3 = Color3.fromRGB(255, 170, 0)
-TextLabel_3.TextSize = 30.000
-
-ezpets.Name = "ezpets"
-ezpets.Parent = main
-ezpets.BackgroundColor3 = Color3.fromRGB(83, 83, 83)
-ezpets.BorderColor3 = Color3.fromRGB(83, 83, 83)
-ezpets.Position = UDim2.new(0.326683283, 0, 0.161403507, 0)
-ezpets.Size = UDim2.new(0, 256, 0, 25)
-ezpets.Font = Enum.Font.Ubuntu
-ezpets.Text = "EzPets"
-ezpets.TextColor3 = Color3.fromRGB(255, 255, 255)
-ezpets.TextSize = 25.000
-ezpets.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/TurfuGoldy/GoldenScripts/main/EzPets.lua", true))()
-end)
-
-voidhub.Name = "voidhub"
-voidhub.Parent = main
-voidhub.BackgroundColor3 = Color3.fromRGB(83, 83, 83)
-voidhub.BorderColor3 = Color3.fromRGB(83, 83, 83)
-voidhub.Position = UDim2.new(0.326683283, 0, 0.27719298, 0)
-voidhub.Size = UDim2.new(0, 256, 0, 25)
-voidhub.Font = Enum.Font.Ubuntu
-voidhub.Text = "VoidHub"
-voidhub.TextColor3 = Color3.fromRGB(255, 255, 255)
-voidhub.TextSize = 25.000
-voidhub.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wind596/VoidHub/main/WiningDediy", true))()
-end)
-
-ShinyTool.Name = "ShinyTool"
-ShinyTool.Parent = main
-ShinyTool.BackgroundColor3 = Color3.fromRGB(83, 83, 83)
-ShinyTool.BorderColor3 = Color3.fromRGB(83, 83, 83)
-ShinyTool.Position = UDim2.new(0.326683283, 0, 0.389473647, 0)
-ShinyTool.Size = UDim2.new(0, 256, 0, 25)
-ShinyTool.Font = Enum.Font.Ubuntu
-ShinyTool.Text = "Shiny Tool"
-ShinyTool.TextColor3 = Color3.fromRGB(255, 255, 255)
-ShinyTool.TextSize = 25.000
-ShinyTool.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/Shiny-Tool/main/ShinyTool.lua"))()
-end)
-
-DHX.Name = "DHX"
-DHX.Parent = main
-DHX.BackgroundColor3 = Color3.fromRGB(83, 83, 83)
-DHX.BorderColor3 = Color3.fromRGB(83, 83, 83)
-DHX.Position = UDim2.new(0.326683283, 0, 0.501754403, 0)
-DHX.Size = UDim2.new(0, 256, 0, 25)
-DHX.Font = Enum.Font.Ubuntu
-DHX.Text = "DHX GUI"
-DHX.TextColor3 = Color3.fromRGB(255, 255, 255)
-DHX.TextSize = 25.000
-DHX.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/si1nnx/psxx/main/g"))()
-end)
-
 Scripts.Name = "Scripts"
 Scripts.Parent = main
 Scripts.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
@@ -129,46 +68,19 @@ Scripts.Font = Enum.Font.Ubuntu
 Scripts.Text = "< > Scripts"
 Scripts.TextColor3 = Color3.fromRGB(255, 255, 255)
 Scripts.TextSize = 25.000
-Scripts.MouseButton1Click:connect(function()
+Scripts.MouseButton1Down:connect(function()
+	 Scriptler.Visible = true
 end)
 
-TextLabel_4.Parent = main
-TextLabel_4.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
-TextLabel_4.BorderColor3 = Color3.fromRGB(43, 43, 43)
-TextLabel_4.Position = UDim2.new(-0.0124688279, 0, 0.161403507, 0)
-TextLabel_4.Size = UDim2.new(0, 121, 0, 3)
-TextLabel_4.Font = Enum.Font.SourceSans
-TextLabel_4.Text = ""
-TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_4.TextSize = 14.000
-
-X.Name = "X"
-X.Parent = main
-X.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
-X.BorderColor3 = Color3.fromRGB(65, 65, 65)
-X.Position = UDim2.new(0.925187051, 0, 0.884210527, 0)
-X.Size = UDim2.new(0, 30, 0, 33)
-X.Font = Enum.Font.SourceSans
-X.Text = "X"
-X.TextColor3 = Color3.fromRGB(255, 0, 0)
-X.TextSize = 30.000
-X.MouseButton1Down:connect(function()
-	ScreenGui:Destroy()
-end)
-
-antiafk.Name = "antiafk"
-antiafk.Parent = main
-antiafk.BackgroundColor3 = Color3.fromRGB(83, 83, 83)
-antiafk.BorderColor3 = Color3.fromRGB(83, 83, 83)
-antiafk.Position = UDim2.new(0.326683283, 0, 0.610526264, 0)
-antiafk.Size = UDim2.new(0, 256, 0, 25)
-antiafk.Font = Enum.Font.Ubuntu
-antiafk.Text = "Anti AFK"
-antiafk.TextColor3 = Color3.fromRGB(255, 255, 255)
-antiafk.TextSize = 25.000
-antiafk.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/SinshubCreator/SinsHubb/main/antiafk"))()
-end)
+TextLabel_3.Parent = main
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+TextLabel_3.BorderColor3 = Color3.fromRGB(43, 43, 43)
+TextLabel_3.Position = UDim2.new(-0.0124688279, 0, 0.161403507, 0)
+TextLabel_3.Size = UDim2.new(0, 120, 0, 3)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = ""
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextSize = 14.000
 
 Discord.Name = "Discord"
 Discord.Parent = main
@@ -181,15 +93,119 @@ Discord.Text = "Discord"
 Discord.TextColor3 = Color3.fromRGB(255, 255, 255)
 Discord.TextSize = 25.000
 Discord.MouseButton1Down:connect(function()
-	    setclipboard('https://discord.gg/T7hTaTg5TV')
+	setclipboard('discord.gg/T7hTaTg5TV')
+	sinsnotif('"discord.gg/T7hTaTg5TV" copied to clipboard')
 end)
 
-TextLabel_5.Parent = main
-TextLabel_5.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
-TextLabel_5.BorderColor3 = Color3.fromRGB(43, 43, 43)
-TextLabel_5.Position = UDim2.new(0.0374064818, 0, 0.799999952, 0)
-TextLabel_5.Size = UDim2.new(0, 79, 0, 19)
+Scriptler.Name = "Scriptler"
+Scriptler.Parent = main
+Scriptler.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Scriptler.BorderColor3 = Color3.fromRGB(65, 65, 65)
+Scriptler.Position = UDim2.new(0.291770577, 0, 0, 0)
+Scriptler.Size = UDim2.new(0, 284, 0, 285)
+Scriptler.Active = true
+Scriptler.Draggable = true
+
+DHX.Name = "DHX"
+DHX.Parent = Scriptler
+DHX.BackgroundColor3 = Color3.fromRGB(83, 83, 83)
+DHX.BorderColor3 = Color3.fromRGB(83, 83, 83)
+DHX.Position = UDim2.new(0.0485142581, 0, 0.43508774, 0)
+DHX.Size = UDim2.new(0, 256, 0, 25)
+DHX.Font = Enum.Font.Ubuntu
+DHX.Text = "DHX GUI"
+DHX.TextColor3 = Color3.fromRGB(255, 255, 255)
+DHX.TextSize = 25.000
+DHX.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/si1nnx/psxx/main/g"))()
+end)
+
+ezpets.Name = "ezpets"
+ezpets.Parent = Scriptler
+ezpets.BackgroundColor3 = Color3.fromRGB(83, 83, 83)
+ezpets.BorderColor3 = Color3.fromRGB(83, 83, 83)
+ezpets.Position = UDim2.new(0.0485142618, 0, 0.221052632, 0)
+ezpets.Size = UDim2.new(0, 256, 0, 25)
+ezpets.Font = Enum.Font.Ubuntu
+ezpets.Text = "EzPets"
+ezpets.TextColor3 = Color3.fromRGB(255, 255, 255)
+ezpets.TextSize = 25.000
+ezpets.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/TurfuGoldy/GoldenScripts/main/EzPets.lua", true))()
+end)
+
+TextLabel_4.Parent = Scriptler
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+TextLabel_4.BorderColor3 = Color3.fromRGB(65, 65, 65)
+TextLabel_4.Position = UDim2.new(0.25799948, 0, 0.0245614033, 0)
+TextLabel_4.Size = UDim2.new(0, 136, 0, 31)
+TextLabel_4.Font = Enum.Font.Ubuntu
+TextLabel_4.Text = "Main"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 170, 0)
+TextLabel_4.TextSize = 30.000
+
+ShinyTool.Name = "ShinyTool"
+ShinyTool.Parent = Scriptler
+ShinyTool.BackgroundColor3 = Color3.fromRGB(83, 83, 83)
+ShinyTool.BorderColor3 = Color3.fromRGB(83, 83, 83)
+ShinyTool.Position = UDim2.new(0.0485142581, 0, 0.326315761, 0)
+ShinyTool.Size = UDim2.new(0, 256, 0, 25)
+ShinyTool.Font = Enum.Font.Ubuntu
+ShinyTool.Text = "Shiny Tool"
+ShinyTool.TextColor3 = Color3.fromRGB(255, 255, 255)
+ShinyTool.TextSize = 25.000
+ShinyTool.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/Shiny-Tool/main/ShinyTool.lua"))()
+end)
+
+voidhub.Name = "voidhub"
+voidhub.Parent = Scriptler
+voidhub.BackgroundColor3 = Color3.fromRGB(83, 83, 83)
+voidhub.BorderColor3 = Color3.fromRGB(83, 83, 83)
+voidhub.Position = UDim2.new(0.0485142767, 0, 0.540350795, 0)
+voidhub.Size = UDim2.new(0, 256, 0, 25)
+voidhub.Font = Enum.Font.Ubuntu
+voidhub.Text = "VoidHub"
+voidhub.TextColor3 = Color3.fromRGB(255, 255, 255)
+voidhub.TextSize = 25.000
+voidhub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wind596/VoidHub/main/WiningDediy", true))()
+end)
+
+X.Name = "X"
+X.Parent = Scriptler
+X.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+X.BorderColor3 = Color3.fromRGB(65, 65, 65)
+X.Position = UDim2.new(0.893496931, 0, 0.884210527, 0)
+X.Size = UDim2.new(0, 30, 0, 33)
+X.Font = Enum.Font.SourceSans
+X.Text = "X"
+X.TextColor3 = Color3.fromRGB(255, 0, 0)
+X.TextSize = 30.000
+X.MouseButton1Down:connect(function()
+	ScreenGui:Destroy()
+end)
+
+antiafk.Name = "antiafk"
+antiafk.Parent = Scriptler
+antiafk.BackgroundColor3 = Color3.fromRGB(83, 83, 83)
+antiafk.BorderColor3 = Color3.fromRGB(83, 83, 83)
+antiafk.Position = UDim2.new(0.0485142767, 0, 0.652631521, 0)
+antiafk.Size = UDim2.new(0, 256, 0, 25)
+antiafk.Font = Enum.Font.Ubuntu
+antiafk.Text = "Anti AFK"
+antiafk.TextColor3 = Color3.fromRGB(255, 255, 255)
+antiafk.TextSize = 25.000
+antiafk.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/SinshubCreator/SinsHubb/main/antiafk"))()
+end)
+
+TextLabel_5.Parent = Scriptler
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+TextLabel_5.BorderColor3 = Color3.fromRGB(65, 65, 65)
+TextLabel_5.Position = UDim2.new(0, 0, 0.957894742, 0)
+TextLabel_5.Size = UDim2.new(0, 148, 0, 12)
 TextLabel_5.Font = Enum.Font.Ubuntu
-TextLabel_5.Text = "Copy"
+TextLabel_5.Text = "Thank you CursedHub!\\n"
 TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_5.TextSize = 25.000
+TextLabel_5.TextSize = 14.000
