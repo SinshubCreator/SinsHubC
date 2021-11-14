@@ -67,14 +67,14 @@ Scripts.Name = "Scripts"
 Scripts.Parent = main
 Scripts.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
 Scripts.BorderColor3 = Color3.fromRGB(43, 43, 43)
-Scripts.Position = UDim2.new(0.016260162, 0, 0.200000003, 0)
+Scripts.Position = UDim2.new(-0.00192165747, 0, 0.210526317, 0)
 Scripts.Size = UDim2.new(0, 103, 0, 25)
 Scripts.Font = Enum.Font.Ubuntu
 Scripts.Text = " Scripts"
 Scripts.TextColor3 = Color3.fromRGB(255, 255, 255)
 Scripts.TextSize = 25.000
 Scripts.MouseButton1Down:connect(function()
-         scriptler.Visible = true
+	scriptler.Visible = true
 end)
 
 TextLabel_3.Parent = main
@@ -98,8 +98,8 @@ Discord.Text = "Discord"
 Discord.TextColor3 = Color3.fromRGB(255, 255, 255)
 Discord.TextSize = 25.000
 Discord.MouseButton1Down:connect(function()
-         setclipboard('discord.gg/T7hTaTg5TV')
-         sinsnotif('"discord.gg/T7hTaTg5TV" copied to clipboard')
+	setclipboard('discord.gg/T7hTaTg5TV')
+	sinsnotif('"discord.gg/T7hTaTg5TV" copied to clipboard')
 end)
 
 
@@ -150,7 +150,7 @@ DHX.Text = "DHX GUI"
 DHX.TextColor3 = Color3.fromRGB(255, 255, 255)
 DHX.TextSize = 25.000
 DHX.MouseButton1Down:connect(function()
-	     loadstring(game:HttpGet("https://raw.githubusercontent.com/si1nnx/psxx/main/g"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/si1nnx/psxx/main/g"))()
 end)
 
 antiafk.Name = "antiafk"
@@ -197,6 +197,7 @@ credits1.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
 credits1.BorderColor3 = Color3.fromRGB(65, 65, 65)
 credits1.Position = UDim2.new(1.0147084, 0, -0.003508772, 0)
 credits1.Size = UDim2.new(0, 265, 0, 285)
+credits1.Visible = false
 
 creditstext.Name = "creditstext"
 creditstext.Parent = credits1
@@ -257,11 +258,11 @@ Credits.Parent = main
 Credits.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
 Credits.BorderColor3 = Color3.fromRGB(43, 43, 43)
 Credits.Position = UDim2.new(0.0272727273, 0, 0.33684212, 0)
-Credits.Size = UDim2.new(0, 103, 0, 25)
+Credits.Size = UDim2.new(0, 95, 0, 25)
 Credits.Font = Enum.Font.Ubuntu
 Credits.Text = "Credits"
 Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
 Credits.TextSize = 25.000
 Credits.MouseButton1Down:connect(function()
-          credits1.Visible = true
+	credits1.Visible = true
 end)
