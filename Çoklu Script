@@ -74,7 +74,7 @@ Scripts.Text = " Scripts"
 Scripts.TextColor3 = Color3.fromRGB(255, 255, 255)
 Scripts.TextSize = 25.000
 Scripts.MouseButton1Down:connect(function()
-	scriptler.Visible = true
+	scriptlerframe.Visible = true
 end)
 
 TextLabel_3.Parent = main
@@ -263,6 +263,7 @@ Credits.Font = Enum.Font.Ubuntu
 Credits.Text = "Credits"
 Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
 Credits.TextSize = 25.000
-Credits.MouseButton1Down:connect(function()
-	credits1.Visible = true
-end)
+credits.MouseButton1Down:connect(function()
+	creditsframe.Visible = true
+	scriptsframe.Visible = false
+end) 
