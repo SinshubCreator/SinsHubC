@@ -7,6 +7,7 @@
 	})
 end
 
+
 local ScreenGui = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
@@ -58,8 +59,8 @@ TextLabel.TextWrapped = true
 TextLabel_2.Parent = TextLabel
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
 TextLabel_2.BorderColor3 = Color3.fromRGB(43, 43, 43)
-TextLabel_2.Position = UDim2.new(1.49011612e-08, 0, 1, 0)
-TextLabel_2.Size = UDim2.new(0, 114, 0, 239)
+TextLabel_2.Position = UDim2.new(0, 0, 1, 0)
+TextLabel_2.Size = UDim2.new(0, 114, 0, 240)
 TextLabel_2.Font = Enum.Font.SourceSans
 TextLabel_2.Text = ""
 TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -76,8 +77,8 @@ Scripts.Text = " Scripts"
 Scripts.TextColor3 = Color3.fromRGB(255, 255, 255)
 Scripts.TextSize = 25.000
 Scripts.MouseButton1Down:connect(function()
-	scriptlerframe.Visible = true
-	credits1frame.Visible = false
+	scriptler.Visible = true
+	credits1.Visible = false
 end) 
 
 TextLabel_3.Parent = main
@@ -104,7 +105,6 @@ Discord.MouseButton1Down:connect(function()
 	setclipboard('discord.gg/T7hTaTg5TV')
 	sinsnotif('"discord.gg/T7hTaTg5TV" copied to clipboard')
 end)
-
 
 scriptler.Name = "scriptler"
 scriptler.Parent = main
@@ -140,6 +140,7 @@ ShinyTool.TextSize = 25.000
 ShinyTool.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/Shiny-Tool/main/ShinyTool.lua"))()
 end)
+
 
 DHX.Name = "DHX"
 DHX.Parent = scriptler
@@ -206,6 +207,7 @@ X.TextSize = 25.000
 X.MouseButton1Down:connect(function()
 	ScreenGui:Destroy()
 end)
+
 
 credits1.Name = "credits1"
 credits1.Parent = main
@@ -293,6 +295,6 @@ Credits.Text = "Credits"
 Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
 Credits.TextSize = 25.000
 Credits.MouseButton1Down:connect(function()
-       credits1frame.Visible = true
-       scriptlerframe.Visible = true
+	credits1.Visible = true
+	scriptler.Visible = true
 end)
