@@ -215,6 +215,7 @@ credits1.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
 credits1.BorderColor3 = Color3.fromRGB(65, 65, 65)
 credits1.Position = UDim2.new(1, 0, -0.003508772, 0)
 credits1.Size = UDim2.new(0, 271, 0, 286)
+credits1.Visible = false
 
 creditstext.Name = "creditstext"
 creditstext.Parent = credits1
