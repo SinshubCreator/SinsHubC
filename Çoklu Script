@@ -21,12 +21,14 @@ local DHX = Instance.new("TextButton")
 local antiafk = Instance.new("TextButton")
 local voidhub = Instance.new("TextButton")
 local TextLabel_4 = Instance.new("TextLabel")
+local X = Instance.new("TextButton")
 local credits1 = Instance.new("Frame")
 local creditstext = Instance.new("TextLabel")
 local discordnick = Instance.new("TextLabel")
 local TextLabel_5 = Instance.new("TextLabel")
 local uidesign = Instance.new("TextLabel")
 local version = Instance.new("TextLabel")
+local X_2 = Instance.new("TextButton")
 local Credits = Instance.new("TextButton")
 
 --Properties:
@@ -37,8 +39,8 @@ main.Name = "main"
 main.Parent = ScreenGui
 main.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
 main.BorderColor3 = Color3.fromRGB(65, 65, 65)
-main.Position = UDim2.new(0.476682842, 0, 0.325865567, 0)
-main.Size = UDim2.new(0, 110, 0, 285)
+main.Position = UDim2.new(0.469547242, 0, 0.325865567, 0)
+main.Size = UDim2.new(0, 113, 0, 285)
 main.Active = true
 main.Draggable = true
 
@@ -56,7 +58,7 @@ TextLabel.TextWrapped = true
 TextLabel_2.Parent = TextLabel
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
 TextLabel_2.BorderColor3 = Color3.fromRGB(43, 43, 43)
-TextLabel_2.Position = UDim2.new(0, 0, 1.02173913, 0)
+TextLabel_2.Position = UDim2.new(1.49011612e-08, 0, 1, 0)
 TextLabel_2.Size = UDim2.new(0, 114, 0, 239)
 TextLabel_2.Font = Enum.Font.SourceSans
 TextLabel_2.Text = ""
@@ -67,15 +69,16 @@ Scripts.Name = "Scripts"
 Scripts.Parent = main
 Scripts.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
 Scripts.BorderColor3 = Color3.fromRGB(43, 43, 43)
-Scripts.Position = UDim2.new(-0.00192165747, 0, 0.210526317, 0)
-Scripts.Size = UDim2.new(0, 103, 0, 25)
+Scripts.Position = UDim2.new(0.0423259921, 0, 0.224561408, 0)
+Scripts.Size = UDim2.new(0, 98, 0, 25)
 Scripts.Font = Enum.Font.Ubuntu
 Scripts.Text = " Scripts"
 Scripts.TextColor3 = Color3.fromRGB(255, 255, 255)
 Scripts.TextSize = 25.000
 Scripts.MouseButton1Down:connect(function()
 	scriptlerframe.Visible = true
-end)
+	credits1frame.Visible = false
+end) 
 
 TextLabel_3.Parent = main
 TextLabel_3.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
@@ -91,8 +94,8 @@ Discord.Name = "Discord"
 Discord.Parent = main
 Discord.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
 Discord.BorderColor3 = Color3.fromRGB(43, 43, 43)
-Discord.Position = UDim2.new(-0.0212476924, 0, 0.866666675, 0)
-Discord.Size = UDim2.new(0, 114, 0, 38)
+Discord.Position = UDim2.new(-0.0019215272, 0, 0.852777779, 0)
+Discord.Size = UDim2.new(0, 109, 0, 38)
 Discord.Font = Enum.Font.Ubuntu
 Discord.Text = "Discord"
 Discord.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -107,9 +110,8 @@ scriptler.Name = "scriptler"
 scriptler.Parent = main
 scriptler.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
 scriptler.BorderColor3 = Color3.fromRGB(65, 65, 65)
-scriptler.Position = UDim2.new(0.926195145, 0, 0, 0)
-scriptler.Size = UDim2.new(0, 311, 0, 285)
-scriptler.Visible = false
+scriptler.Position = UDim2.new(0.979292333, 0, -0.003508772, 0)
+scriptler.Size = UDim2.new(0, 311, 0, 286)
 
 ezpets.Name = "ezpets"
 ezpets.Parent = scriptler
@@ -184,20 +186,33 @@ end)
 TextLabel_4.Parent = scriptler
 TextLabel_4.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
 TextLabel_4.BorderColor3 = Color3.fromRGB(65, 65, 65)
-TextLabel_4.Position = UDim2.new(0.390551805, 0, 0.0963333398, 0)
+TextLabel_4.Position = UDim2.new(0.390551805, 0, 0.0893403292, 0)
 TextLabel_4.Size = UDim2.new(0, 66, 0, 20)
 TextLabel_4.Font = Enum.Font.Ubuntu
 TextLabel_4.Text = "Main"
 TextLabel_4.TextColor3 = Color3.fromRGB(255, 81, 0)
 TextLabel_4.TextSize = 30.000
 
+X.Name = "X"
+X.Parent = scriptler
+X.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+X.BorderColor3 = Color3.fromRGB(65, 65, 65)
+X.Position = UDim2.new(0.90996784, 0, 0.856789112, 0)
+X.Size = UDim2.new(0, 28, 0, 40)
+X.Font = Enum.Font.Ubuntu
+X.Text = "X"
+X.TextColor3 = Color3.fromRGB(255, 0, 0)
+X.TextSize = 25.000
+X.MouseButton1Down:connect(function()
+	ScreenGui:Destroy()
+end)
+
 credits1.Name = "credits1"
 credits1.Parent = main
 credits1.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
 credits1.BorderColor3 = Color3.fromRGB(65, 65, 65)
-credits1.Position = UDim2.new(1.0147084, 0, -0.003508772, 0)
-credits1.Size = UDim2.new(0, 265, 0, 285)
-credits1.Visible = false
+credits1.Position = UDim2.new(1, 0, -0.003508772, 0)
+credits1.Size = UDim2.new(0, 271, 0, 286)
 
 creditstext.Name = "creditstext"
 creditstext.Parent = credits1
@@ -224,8 +239,8 @@ discordnick.TextSize = 22.000
 TextLabel_5.Parent = credits1
 TextLabel_5.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
 TextLabel_5.BorderColor3 = Color3.fromRGB(43, 43, 43)
-TextLabel_5.Position = UDim2.new(0.000324983412, 0, 0.161403507, 0)
-TextLabel_5.Size = UDim2.new(0, 264, 0, 3)
+TextLabel_5.Position = UDim2.new(0.000324995315, 0, 0.161403507, 0)
+TextLabel_5.Size = UDim2.new(0, 270, 0, 3)
 TextLabel_5.Font = Enum.Font.SourceSans
 TextLabel_5.Text = ""
 TextLabel_5.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -253,17 +268,31 @@ version.Text = "Version: 3.1v"
 version.TextColor3 = Color3.fromRGB(255, 255, 255)
 version.TextSize = 22.000
 
+X_2.Name = "X"
+X_2.Parent = credits1
+X_2.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+X_2.BorderColor3 = Color3.fromRGB(65, 65, 65)
+X_2.Position = UDim2.new(0.898897648, 0, 0.86028558, 0)
+X_2.Size = UDim2.new(0, 28, 0, 39)
+X_2.Font = Enum.Font.Ubuntu
+X_2.Text = "X"
+X_2.TextColor3 = Color3.fromRGB(255, 0, 0)
+X_2.TextSize = 20.000
+X_2.MouseButton1Down:connect(function()
+	ScreenGui:Destroy()
+end)
+
 Credits.Name = "Credits"
 Credits.Parent = main
 Credits.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
 Credits.BorderColor3 = Color3.fromRGB(43, 43, 43)
-Credits.Position = UDim2.new(0.0272727273, 0, 0.33684212, 0)
+Credits.Position = UDim2.new(0.0715205148, 0, 0.347368449, 0)
 Credits.Size = UDim2.new(0, 95, 0, 25)
 Credits.Font = Enum.Font.Ubuntu
 Credits.Text = "Credits"
 Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
 Credits.TextSize = 25.000
-credits.MouseButton1Down:connect(function()
-	creditsframe.Visible = true
-	scriptsframe.Visible = false
-end) 
+Credits.MouseButton1Down:connect(function()
+       credits1frame.Visible = true
+       scriptlerframe.Visible = true
+end)
