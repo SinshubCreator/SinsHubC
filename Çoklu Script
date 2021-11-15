@@ -296,5 +296,5 @@ Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
 Credits.TextSize = 25.000
 Credits.MouseButton1Down:connect(function()
 	credits1.Visible = true
-	scriptler.Visible = true
+	scriptler.Visible = false
 end)
