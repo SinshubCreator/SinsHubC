@@ -1,1 +1,382 @@
- Tested...
+function sinsnotif(text)
+	wait(0.2)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Sins Hub"; 
+		Text = text; 
+		Duration = 5; 
+	})
+end
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local Scripts = Instance.new("TextButton")
+local scripts2s = Instance.new("ImageButton")
+local credits = Instance.new("TextButton")
+local people = Instance.new("ImageButton")
+local discord = Instance.new("ImageButton")
+local scriptler = Instance.new("Frame")
+local Main = Instance.new("TextLabel")
+local Ezpets = Instance.new("TextButton")
+local ShinyTool = Instance.new("TextButton")
+local DHXGui = Instance.new("TextButton")
+local VoidHub = Instance.new("TextButton")
+local AntiAfk = Instance.new("TextButton")
+local X = Instance.new("ImageButton")
+local Creditler = Instance.new("Frame")
+local account_circle = Instance.new("ImageButton")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local X_2 = Instance.new("ImageButton")
+local OthersV = Instance.new("ImageButton")
+local TextLabel_5 = Instance.new("TextLabel")
+local Others = Instance.new("Frame")
+local Sinshubtext = Instance.new("TextLabel")
+local SinshubVersion = Instance.new("TextLabel")
+local X_3 = Instance.new("ImageButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+main.BorderColor3 = Color3.fromRGB(65, 65, 65)
+main.Position = UDim2.new(0.311837882, 0, 0.167386994, 0)
+main.Size = UDim2.new(0, 543, 0, 357)
+main.Active = true
+main.Draggable = true
+
+TextLabel.Parent = main
+TextLabel.BackgroundColor3 = Color3.fromRGB(91, 91, 91)
+TextLabel.BorderColor3 = Color3.fromRGB(85, 85, 85)
+TextLabel.Size = UDim2.new(0, 121, 0, 45)
+TextLabel.Font = Enum.Font.Ubuntu
+TextLabel.Text = "Sins Hub"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 0)
+TextLabel.TextSize = 30.000
+TextLabel.TextWrapped = true
+
+TextLabel_2.Parent = TextLabel
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+TextLabel_2.BorderColor3 = Color3.fromRGB(75, 75, 75)
+TextLabel_2.Position = UDim2.new(0, 0, 0.944742858, 0)
+TextLabel_2.Size = UDim2.new(0, 121, 0, 314)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = ""
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 1.000
+
+Scripts.Name = "Scripts"
+Scripts.Parent = main
+Scripts.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+Scripts.BorderColor3 = Color3.fromRGB(75, 75, 75)
+Scripts.Position = UDim2.new(0, 0, 0.13830547, 0)
+Scripts.Size = UDim2.new(0, 142, 0, 38)
+Scripts.Font = Enum.Font.Ubuntu
+Scripts.Text = "scripts"
+Scripts.TextColor3 = Color3.fromRGB(255, 255, 255)
+Scripts.TextSize = 23.000
+Scripts.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Scripts.MouseButton1Down:connect(function()
+	scriptler.Visible = true
+	Creditler.Visible = false
+	Others.Visible = false
+end) 
+
+scripts2s.Name = "scripts2s"
+scripts2s.Parent = Scripts
+scripts2s.BackgroundTransparency = 1.000
+scripts2s.LayoutOrder = 5
+scripts2s.Position = UDim2.new(0.019569803, 0, 0.0614989176, 0)
+scripts2s.Size = UDim2.new(0, 33, 0, 33)
+scripts2s.ZIndex = 2
+scripts2s.Image = "rbxassetid://3926305904"
+scripts2s.ImageRectOffset = Vector2.new(404, 844)
+scripts2s.ImageRectSize = Vector2.new(36, 36)
+scripts2s.MouseButton1Down:connect(function()
+	scriptler.Visible = true
+	Creditler.Visible = false
+	Others.Visible = false
+end)
+
+credits.Name = "credits"
+credits.Parent = main
+credits.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+credits.BorderColor3 = Color3.fromRGB(75, 75, 75)
+credits.Position = UDim2.new(0, 0, 0.269844413, 0)
+credits.Size = UDim2.new(0, 142, 0, 38)
+credits.Font = Enum.Font.Ubuntu
+credits.Text = "credits"
+credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+credits.TextSize = 23.000
+credits.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+credits.MouseButton1Down:connect(function()
+	Creditler.Visible = true
+	scriptler.Visible = false
+	Others.Visible = false
+end)
+
+people.Name = "people"
+people.Parent = credits
+people.BackgroundTransparency = 1.000
+people.LayoutOrder = 7
+people.Position = UDim2.new(0.0254211649, 0, 0.091472201, 0)
+people.Size = UDim2.new(0, 30, 0, 30)
+people.ZIndex = 2
+people.Image = "rbxassetid://3926305904"
+people.ImageRectOffset = Vector2.new(144, 4)
+people.ImageRectSize = Vector2.new(24, 24)
+people.MouseButton1Down:connect(function()
+	Creditler.Visible = true
+	scriptler.Visible = false
+	Others.Visible = false
+end)
+
+discord.Name = "discord"
+discord.Parent = main
+discord.BackgroundTransparency = 1.000
+discord.LayoutOrder = 7
+discord.Position = UDim2.new(0.0349163488, 0, 0.866596639, 0)
+discord.Size = UDim2.new(0, 30, 0, 30)
+discord.ZIndex = 2
+discord.Image = "rbxassetid://3926307971"
+discord.ImageRectOffset = Vector2.new(164, 284)
+discord.ImageRectSize = Vector2.new(36, 36)
+discord.MouseButton1Down:connect(function()
+	setclipboard('discord.gg/T7hTaTg5TV')
+	sinsnotif('"discord.gg/T7hTaTg5TV" copied to clipboard')
+end)
+
+scriptler.Name = "scriptler"
+scriptler.Parent = main
+scriptler.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+scriptler.BorderColor3 = Color3.fromRGB(65, 65, 65)
+scriptler.Position = UDim2.new(0.222018346, 0, 0, 0)
+scriptler.Size = UDim2.new(0, 423, 0, 357)
+scriptler.Visible = false
+
+Main.Name = "Main"
+Main.Parent = scriptler
+Main.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Main.BorderColor3 = Color3.fromRGB(65, 65, 65)
+Main.Position = UDim2.new(0.412190139, 0, 0.0280112047, 0)
+Main.Size = UDim2.new(0, 74, 0, 50)
+Main.Font = Enum.Font.Ubuntu
+Main.Text = "Main"
+Main.TextColor3 = Color3.fromRGB(255, 170, 0)
+Main.TextSize = 30.000
+
+Ezpets.Name = "Ezpets"
+Ezpets.Parent = scriptler
+Ezpets.BackgroundColor3 = Color3.fromRGB(99, 99, 99)
+Ezpets.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Ezpets.Position = UDim2.new(0.166327268, 0, 0.207368374, 0)
+Ezpets.Size = UDim2.new(0, 281, 0, 28)
+Ezpets.Font = Enum.Font.Ubuntu
+Ezpets.Text = "EzPets"
+Ezpets.TextColor3 = Color3.fromRGB(255, 255, 255)
+Ezpets.TextSize = 25.000
+Ezpets.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Ezpets.TextWrapped = true
+Ezpets.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/TurfuGoldy/GoldenScripts/main/EzPets.lua", true))()
+end)
+
+ShinyTool.Name = "Shiny Tool"
+ShinyTool.Parent = scriptler
+ShinyTool.BackgroundColor3 = Color3.fromRGB(99, 99, 99)
+ShinyTool.BorderColor3 = Color3.fromRGB(30, 30, 30)
+ShinyTool.Position = UDim2.new(0.166327268, 0, 0.29800123, 0)
+ShinyTool.Size = UDim2.new(0, 281, 0, 28)
+ShinyTool.Font = Enum.Font.Ubuntu
+ShinyTool.Text = "Shiny Tool"
+ShinyTool.TextColor3 = Color3.fromRGB(255, 255, 255)
+ShinyTool.TextSize = 25.000
+ShinyTool.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+ShinyTool.TextWrapped = true
+ShinyTool.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/Shiny-Tool/main/ShinyTool.lua"))()
+end)
+
+DHXGui.Name = "DHX Gui"
+DHXGui.Parent = scriptler
+DHXGui.BackgroundColor3 = Color3.fromRGB(99, 99, 99)
+DHXGui.BorderColor3 = Color3.fromRGB(30, 30, 30)
+DHXGui.Position = UDim2.new(0.166327268, 0, 0.392023921, 0)
+DHXGui.Size = UDim2.new(0, 281, 0, 28)
+DHXGui.Font = Enum.Font.Ubuntu
+DHXGui.Text = "DHX GUİ"
+DHXGui.TextColor3 = Color3.fromRGB(255, 255, 255)
+DHXGui.TextSize = 25.000
+DHXGui.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+DHXGui.TextWrapped = true
+DHXGui.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/si1nnx/psxx/main/g"))()
+end)
+
+VoidHub.Name = "Void Hub"
+VoidHub.Parent = scriptler
+VoidHub.BackgroundColor3 = Color3.fromRGB(99, 99, 99)
+VoidHub.BorderColor3 = Color3.fromRGB(30, 30, 30)
+VoidHub.Position = UDim2.new(0.166327268, 0, 0.488259017, 0)
+VoidHub.Size = UDim2.new(0, 281, 0, 28)
+VoidHub.Font = Enum.Font.Ubuntu
+VoidHub.Text = "VoidHub"
+VoidHub.TextColor3 = Color3.fromRGB(255, 255, 255)
+VoidHub.TextSize = 25.000
+VoidHub.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+VoidHub.TextWrapped = true
+VoidHub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wind596/VoidHub/main/WiningDediy", true))()
+end)
+
+AntiAfk.Name = "Anti-Afk"
+AntiAfk.Parent = scriptler
+AntiAfk.BackgroundColor3 = Color3.fromRGB(99, 99, 99)
+AntiAfk.BorderColor3 = Color3.fromRGB(30, 30, 30)
+AntiAfk.Position = UDim2.new(0.166327268, 0, 0.585082829, 0)
+AntiAfk.Size = UDim2.new(0, 281, 0, 28)
+AntiAfk.Font = Enum.Font.Ubuntu
+AntiAfk.Text = "Anti-AFK"
+AntiAfk.TextColor3 = Color3.fromRGB(255, 255, 255)
+AntiAfk.TextSize = 25.000
+AntiAfk.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+AntiAfk.TextWrapped = true
+AntiAfk.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/SinshubCreator/SinsHubb/main/antiafk"))()
+end)
+
+X.Name = "X"
+X.Parent = scriptler
+X.BackgroundTransparency = 1.000
+X.Position = UDim2.new(0.938943863, 0, 0.913559318, 0)
+X.Size = UDim2.new(0, 25, 0, 25)
+X.ZIndex = 2
+X.Image = "rbxassetid://3926305904"
+X.ImageRectOffset = Vector2.new(284, 4)
+X.ImageRectSize = Vector2.new(24, 24)
+X.MouseButton1Down:connect(function()
+	ScreenGui:Destroy()
+end)
+
+Creditler.Name = "Creditler"
+Creditler.Parent = main
+Creditler.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Creditler.BorderColor3 = Color3.fromRGB(65, 65, 65)
+Creditler.Position = UDim2.new(0.222018346, 0, 0.00299995486, 0)
+Creditler.Size = UDim2.new(0, 423, 0, 355)
+Creditler.Visible = false
+
+account_circle.Name = "account_circle"
+account_circle.Parent = Creditler
+account_circle.BackgroundTransparency = 1.000
+account_circle.Position = UDim2.new(0.229372948, 0, 0.171186417, 0)
+account_circle.Size = UDim2.new(0, 30, 0, 30)
+account_circle.ZIndex = 2
+account_circle.Image = "rbxassetid://3926307971"
+account_circle.ImageRectOffset = Vector2.new(124, 204)
+account_circle.ImageRectSize = Vector2.new(36, 36)
+
+TextLabel_3.Parent = Creditler
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+TextLabel_3.BorderColor3 = Color3.fromRGB(65, 65, 65)
+TextLabel_3.Position = UDim2.new(0.330033004, 0, 0.172881365, 0)
+TextLabel_3.Size = UDim2.new(0, 137, 0, 30)
+TextLabel_3.Font = Enum.Font.Ubuntu
+TextLabel_3.Text = "YasinS#9155"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_3.TextSize = 25.000
+
+TextLabel_4.Parent = Creditler
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+TextLabel_4.BorderColor3 = Color3.fromRGB(65, 65, 65)
+TextLabel_4.Position = UDim2.new(0.254499912, 0, 0.868321776, 0)
+TextLabel_4.Size = UDim2.new(0, 200, 0, 22)
+TextLabel_4.Font = Enum.Font.Ubuntu
+TextLabel_4.Text = "You can also use CursedHub"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 85, 0)
+TextLabel_4.TextSize = 14.000
+
+X_2.Name = "X"
+X_2.Parent = Creditler
+X_2.BackgroundTransparency = 1.000
+X_2.Position = UDim2.new(0.925297856, 0, 0.92368108, 0)
+X_2.Size = UDim2.new(0, 25, 0, 25)
+X_2.ZIndex = 2
+X_2.Image = "rbxassetid://3926305904"
+X_2.ImageRectOffset = Vector2.new(284, 4)
+X_2.ImageRectSize = Vector2.new(24, 24)
+X_2.MouseButton1Down:connect(function()
+	ScreenGui:Destroy()
+end)
+
+OthersV.Name = "OthersV"
+OthersV.Parent = main
+OthersV.BackgroundTransparency = 1.000
+OthersV.Position = UDim2.new(0.129422545, 0, 0.866596639, 0)
+OthersV.Size = UDim2.new(0, 30, 0, 30)
+OthersV.ZIndex = 2
+OthersV.Image = "rbxassetid://3926307971"
+OthersV.ImageRectOffset = Vector2.new(964, 4)
+OthersV.ImageRectSize = Vector2.new(36, 36)
+OthersV.MouseButton1Down:connect(function()
+	Others.Visible = true
+	scriptler.Visible = false
+	Creditler.Visible = false
+end)
+
+TextLabel_5.Parent = main
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+TextLabel_5.BorderColor3 = Color3.fromRGB(75, 75, 75)
+TextLabel_5.Position = UDim2.new(0.0366972461, 0, 0.824967563, 0)
+TextLabel_5.Size = UDim2.new(0, 81, 0, 60)
+TextLabel_5.Font = Enum.Font.Ubuntu
+TextLabel_5.Text = "|"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 30.000
+
+Others.Name = "Others"
+Others.Parent = main
+Others.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Others.BorderColor3 = Color3.fromRGB(65, 65, 65)
+Others.Position = UDim2.new(0.222018361, 0, 0.00299995486, 0)
+Others.Size = UDim2.new(0, 422, 0, 355)
+Others.Visible = false
+
+Sinshubtext.Name = "Sinshubtext"
+Sinshubtext.Parent = Others
+Sinshubtext.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Sinshubtext.BorderColor3 = Color3.fromRGB(65, 65, 65)
+Sinshubtext.Position = UDim2.new(-0.000491388142, 0, 0.931687891, 0)
+Sinshubtext.Size = UDim2.new(0, 72, 0, 25)
+Sinshubtext.Font = Enum.Font.Ubuntu
+Sinshubtext.Text = "SinsHub"
+Sinshubtext.TextColor3 = Color3.fromRGB(255, 85, 0)
+Sinshubtext.TextSize = 20.000
+
+SinshubVersion.Name = "SinshubVersion"
+SinshubVersion.Parent = Others
+SinshubVersion.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+SinshubVersion.BorderColor3 = Color3.fromRGB(65, 65, 65)
+SinshubVersion.Position = UDim2.new(0.300764203, 0, 0.383218825, 0)
+SinshubVersion.Size = UDim2.new(0, 168, 0, 51)
+SinshubVersion.Font = Enum.Font.Ubuntu
+SinshubVersion.Text = "Version: v6.0"
+SinshubVersion.TextColor3 = Color3.fromRGB(255, 247, 1)
+SinshubVersion.TextSize = 30.000
+
+X_3.Name = "X"
+X_3.Parent = Others
+X_3.BackgroundTransparency = 1.000
+X_3.Position = UDim2.new(0.93953824, 0, 0.92368108, 0)
+X_3.Size = UDim2.new(0, 25, 0, 25)
+X_3.ZIndex = 2
+X_3.Image = "rbxassetid://3926305904"
+X_3.ImageRectOffset = Vector2.new(284, 4)
+X_3.ImageRectSize = Vector2.new(24, 24)
+X_3.MouseButton1Down:connect(function()
+	ScreenGui:Destroy()
+end)
