@@ -123,6 +123,7 @@ end)
 UICorner.CornerRadius = UDim.new(0, 4)
 UICorner.Parent = loader_2
 
+
 sins.Name = "sins"
 sins.Parent = loader_2
 sins.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
