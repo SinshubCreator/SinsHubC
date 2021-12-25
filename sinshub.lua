@@ -118,6 +118,8 @@ load.MouseButton1Down:connect(function()
                  loadstring(game:HttpGet("https://raw.githubusercontent.com/GwnStefano/NexusHub/main/Main", true))()
         elseif game.PlaceId == 4872321990 then
                  loadstring(game:HttpGet("http://void-scripts.com/Scripts/islands_new.lua"))()
+        elseif game.PlaceId == 4954752502 then
+                 loadstring(game:HttpGet("https://raw.githubusercontent.com/SinshubCreator/SinsHubb/main/towerofmisery"))() 
 	end
 	loader:Destroy()
 end)
