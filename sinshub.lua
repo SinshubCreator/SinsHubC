@@ -110,6 +110,8 @@ load.MouseButton1Down:connect(function()
                  loadstring(game:HttpGet(('https://raw.githubusercontent.com/YukiTM/Roblox/main/Legends'),true))()
         elseif game.PlaceId == 335760407 then
                  loadstring(game:HttpGet("https://paste.ee/r/ykM2s", true))()
+        elseif game.PlaceId == 7449695387 then
+                 loadstring(game:HttpGet"https://pastebinp.com/raw/eccv9pgu")()
 	end
 	loader:Destroy()
 end)
