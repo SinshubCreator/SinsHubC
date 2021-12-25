@@ -126,7 +126,7 @@ UICorner.Parent = loader_2
 
 sins.Name = "sins"
 sins.Parent = loader_2
-sins.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+sins.BackgroundColor3 = Color3.fromRGB(250, 250, 250)
 sins.BackgroundTransparency = 1.000
 sins.BorderColor3 = Color3.fromRGB(27, 42, 53)
 sins.Position = UDim2.new(0.0396327414, 0, 0.0843137279, 0)
