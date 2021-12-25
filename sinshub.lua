@@ -73,7 +73,7 @@ load.MouseButton1Down:connect(function()
         elseif game.PlaceId == 7553566159 then
                  loadstring(game:HttpGet(("https://raw.githubusercontent.com/Bebo-Mods/BeboScripts/main/SquidGame.lua")))()
         elseif game.PlaceId == 2753915549 then
-                  loadstring(game:HttpGet("https://raw.githubusercontent.com/StormSKz12/StirkeHub1/main/Gameincluded"))()
+                   loadstring(game:HttpGet("https://raw.githubusercontent.com/Strikehubv2z/StormSKz/main/All_in_one"))()
         elseif game.PlaceId == 1224212277 then
                  loadstring(game:HttpGet("https://jack1214060.xyz/jayhub",true))()
         elseif game.PlaceId == 6766156863 then
