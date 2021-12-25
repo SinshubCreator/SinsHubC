@@ -172,9 +172,6 @@ exit.Text = "Exit"
 exit.TextColor3 = Color3.fromRGB(255, 255, 255)
 exit.TextSize = 53.000
 exit.Visible = false
-exit.MouseButton1Down:connect(function()
-          game.Players.LocalPlayer:Kick("SinsHub Exit, pls rejoin.")
-end)
 
 UICorner_3.CornerRadius = UDim.new(0, 4)
 UICorner_3.Parent = exit
