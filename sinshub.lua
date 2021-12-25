@@ -114,6 +114,8 @@ load.MouseButton1Down:connect(function()
                  loadstring(game:HttpGet"https://pastebinp.com/raw/eccv9pgu")()
         elseif game.PlaceId == 815405518 then
                  loadstring(game:GetObjects("rbxassetid://1683559539")[1].Source)()
+        elseif game.PlaceId == then
+                 loadstring(game:HttpGet("https://raw.githubusercontent.com/GwnStefano/NexusHub/main/Main", true))()
 	end
 	loader:Destroy()
 end)
