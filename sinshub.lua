@@ -41,7 +41,7 @@ loader_2.Size = UDim2.new(0, 1,0, 0)
 
 load.MouseButton1Down:connect(function()
 	if game.PlaceId == 6284583030 then
-Pet Simulator X		loadstring(game:HttpGet("https://raw.githubusercontent.com/SinshubCreator/SinsHubC/main/%C3%87oklu%20Script"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/SinshubCreator/SinsHubC/main/%C3%87oklu%20Script"))()
 	elseif game.PlaceId == 621129760 then          -- buralara oyunid ve scriptleri yazcan
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/ZinityDrops/OwlHubLink/master/OwlHubBack.lua"))();
 	elseif game.PlaceId == 734159876 then
