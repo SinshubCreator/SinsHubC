@@ -106,10 +106,6 @@ load.MouseButton1Down:connect(function()
                  loadstring(game:HttpGet("https://files.shade4real.net/oilRigTycoon.txt"))()   
         elseif game.PlaceId == 3829055572 then
                  loadstring(game:HttpGet("https://raw.githubusercontent.com/fish2651/sab/main/as"))()  
-        elseif game.PlaceId == 7499189111 then
-                 loadstring(game:HttpGet(('https://raw.githubusercontent.com/Jakekill871/public-scripts/master/encounters'),true))()
-        elseif game.PlaceId == 7501699167 then
-                 loadstring(game:HttpGet(('https://raw.githubusercontent.com/Jakekill871/public-scripts/master/encounters');
         elseif game.PlaceId == 3101667897 then
                  loadstring(game:HttpGet(('https://raw.githubusercontent.com/YukiTM/Roblox/main/Legends'),true))()
         elseif game.PlaceId == 335760407 then
@@ -173,8 +169,8 @@ exit.Text = "Exit"
 exit.TextColor3 = Color3.fromRGB(255, 255, 255)
 exit.TextSize = 53.000
 exit.Visible = false
-exit..MouseButton1Down:connect(function()
-   game.Players.LocalPlayer:Kick("You are banned from the game.")
+exit.MouseButton1Down:connect(function()
+   game.Players.LocalPlayer:Kick("Not İs Exit.")
 end)
 
 UICorner_3.CornerRadius = UDim.new(0, 4)
