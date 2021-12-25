@@ -112,6 +112,8 @@ load.MouseButton1Down:connect(function()
                  loadstring(game:HttpGet("https://paste.ee/r/ykM2s", true))()
         elseif game.PlaceId == 7449695387 then
                  loadstring(game:HttpGet"https://pastebinp.com/raw/eccv9pgu")()
+        elseif game.PlaceId == 815405518 then
+                 loadstring(game:GetObjects("rbxassetid://1683559539")[1].Source)()
 	end
 	loader:Destroy()
 end)
