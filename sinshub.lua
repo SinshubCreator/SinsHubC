@@ -128,6 +128,8 @@ load.MouseButton1Down:connect(function()
                  loadstring(game:HttpGet("https://raw.githubusercontent.com/AnonymousErrors/hub1/main/main.lua"))()
         elseif game.PlaceId == 2653064683 then
                  loadstring(game:HttpGet("https://raw.githubusercontent.com/gwxn/scripps/main/Word%20Bomb.lua", true))()
+        elseif game.PlaceId == 5023820864 then
+                 loadstring(game:HttpGet("https://raw.githubusercontent.com/SinshubCreator/SinsHubb/main/tradetower"))() 
 	end
 	loader:Destroy()
 end)
