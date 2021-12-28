@@ -140,6 +140,8 @@ load.MouseButton1Down:connect(function()
                  loadstring(game:HttpGet("https://raw.githubusercontent.com/migu-star/Scripts/main/ElectricStateX.lua"))()
         elseif game.PlaceId == 914010731 then
                  loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/z4gs/scripts/master/Ro-Ghoul%20Auto%20Farm.lua")))()
+        elseif game.PlaceId == 2916899287 then
+                 loadstring(game:HttpGet("https://raw.githubusercontent.com/AlexR32/Roblox/main/BRM5/SilentAim.lua"))()
 	end
 	loader:Destroy()
 end)
