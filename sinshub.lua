@@ -134,6 +134,8 @@ load.MouseButton1Down:connect(function()
                  loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/JustEzpi/ROBLOX-Scripts/main/Generic_GUI"))()
         elseif game.PlaceId == 2677609345 then
                  loadstring(game:HttpGet("https://raw.githubusercontent.com/GwnStefano/NexusHub/main/Main"))() 
+        elseif game.PlaceId == 4924922222 then
+                 loadstring(game:HttpGet("https://raw.githubusercontent.com/ChillSoftworks/Houseg/main/Housegui"))()
 	end
 	loader:Destroy()
 end)
