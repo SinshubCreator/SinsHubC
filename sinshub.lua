@@ -130,6 +130,9 @@ load.MouseButton1Down:connect(function()
                  loadstring(game:HttpGet("https://raw.githubusercontent.com/gwxn/scripps/main/Word%20Bomb.lua", true))()
         elseif game.PlaceId == 5023820864 then
                  loadstring(game:HttpGet("https://raw.githubusercontent.com/SinshubCreator/SinsHubb/main/tradetower"))() 
+        elseif game.PlaceId == 4598019433 then 
+                 loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/JustEzpi/ROBLOX-Scripts/main/Generic_GUI"))()
+        elseif game.PlaceId == 
 	end
 	loader:Destroy()
 end)
