@@ -146,6 +146,8 @@ load.MouseButton1Down:connect(function()
                  loadstring(game:HttpGet("http://void-scripts.com/RIP/MallTycoon.lua"))()
         elseif game.PlaceId == 185655149 then
                  loadstring(game:HttpGet("https://raw.githubusercontent.com/TheRealJMz/BlueQ/main/Script", true))()
+        elseif game.PlaceId == 4855457388 then
+                  loadstring(game:HttpGet("https://github.com/LioK251/Scripts/raw/main/lazyhub.lua"))()
 	end
 	loader:Destroy()
 end)
