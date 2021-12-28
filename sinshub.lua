@@ -144,6 +144,8 @@ load.MouseButton1Down:connect(function()
                  loadstring(game:HttpGet("https://raw.githubusercontent.com/AlexR32/Roblox/main/BRM5/SilentAim.lua"))()
         elseif game.PlaceId == 5736409216 then
                  loadstring(game:HttpGet("http://void-scripts.com/RIP/MallTycoon.lua"))()
+        elseif game.PlaceId == 185655149 then
+                 loadstring(game:HttpGet("https://raw.githubusercontent.com/TheRealJMz/BlueQ/main/Script", true))()
 	end
 	loader:Destroy()
 end)
