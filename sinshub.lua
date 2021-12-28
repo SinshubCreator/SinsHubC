@@ -132,7 +132,8 @@ load.MouseButton1Down:connect(function()
                  loadstring(game:HttpGet("https://raw.githubusercontent.com/SinshubCreator/SinsHubb/main/tradetower"))() 
         elseif game.PlaceId == 4598019433 then 
                  loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/JustEzpi/ROBLOX-Scripts/main/Generic_GUI"))()
-        elseif game.PlaceId == 
+        elseif game.PlaceId == 2677609345 then
+                 loadstring(game:HttpGet("https://raw.githubusercontent.com/GwnStefano/NexusHub/main/Main"))() 
 	end
 	loader:Destroy()
 end)
