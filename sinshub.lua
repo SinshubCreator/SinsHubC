@@ -148,6 +148,8 @@ load.MouseButton1Down:connect(function()
                  loadstring(game:HttpGet("https://raw.githubusercontent.com/TheRealJMz/BlueQ/main/Script", true))()
         elseif game.PlaceId == 4855457388 then
                   loadstring(game:HttpGet("https://github.com/LioK251/Scripts/raw/main/lazyhub.lua"))()
+        elseif game.PlaceId == 990364410 then
+                   loadstring(game:HttpGet("https://raw.githubusercontent.com/FOXTROXHACKS/ElToro/main/Hub.lua"))()
 	end
 	loader:Destroy()
 end)
