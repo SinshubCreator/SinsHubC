@@ -136,6 +136,8 @@ load.MouseButton1Down:connect(function()
                  loadstring(game:HttpGet("https://raw.githubusercontent.com/GwnStefano/NexusHub/main/Main"))() 
         elseif game.PlaceId == 4924922222 then
                  loadstring(game:HttpGet("https://raw.githubusercontent.com/ChillSoftworks/Houseg/main/Housegui"))()
+        elseif game.PlaceId == 2262441883 then
+                 loadstring(game:HttpGet("https://raw.githubusercontent.com/migu-star/Scripts/main/ElectricStateX.lua"))()
 	end
 	loader:Destroy()
 end)
