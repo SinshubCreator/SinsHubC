@@ -168,6 +168,8 @@ load.MouseButton1Down:connect(function()
                   loadstring(game:HttpGet("https://raw.githubusercontent.com/LOOF-sys/Roblox-Shit/main/MuscleLegends.lua"))() 
         elseif game.PlaceId == 1537690962 then
                   loadstring(game:HttpGet("https://raw.githubusercontent.com/Historia00012/HISTORIAHUB/main/BSS%20FREE"))() 
+        elseif game.PlaceId == 2512643572 then
+                  loadstring(game:HttpGet("https://raw.githubusercontent.com/Luftwaffe-dotcom/a/main/Bubble%20Gum%20Sim"))() 
 	end
 	loader:Destroy()
 end)
