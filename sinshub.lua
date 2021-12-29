@@ -166,6 +166,8 @@ load.MouseButton1Down:connect(function()
                   loadstring(game:HttpGet(("https://darkhub.xyz/remote-script.lua"), true))()
         elseif game.PlaceId == 3623096087 then
                   loadstring(game:HttpGet("https://raw.githubusercontent.com/LOOF-sys/Roblox-Shit/main/MuscleLegends.lua"))() 
+        elseif game.PlaceId == 1537690962 then
+                  loadstring(game:HttpGet("https://raw.githubusercontent.com/Historia00012/HISTORIAHUB/main/BSS%20FREE"))() 
 	end
 	loader:Destroy()
 end)
