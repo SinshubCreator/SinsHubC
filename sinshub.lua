@@ -164,6 +164,8 @@ load.MouseButton1Down:connect(function()
                   loadstring(game:HttpGet("https://raw.githubusercontent.com/Introvert1337/RobloxReleases/master/Scripts/Funky_Friday_Autoplayer.lua"))()
         elseif game.PlaceId == 3233893879 then
                   loadstring(game:HttpGet(("https://darkhub.xyz/remote-script.lua"), true))()
+        elseif game.PlaceId == 3623096087 then
+                  loadstring(game:HttpGet("https://raw.githubusercontent.com/LOOF-sys/Roblox-Shit/main/MuscleLegends.lua"))() 
 	end
 	loader:Destroy()
 end)
