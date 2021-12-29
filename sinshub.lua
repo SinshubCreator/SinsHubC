@@ -162,6 +162,8 @@ load.MouseButton1Down:connect(function()
                   loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptRUs/Ryans/main/AnimeTapper.lua"))()
         elseif game.PlaceId == 6447798030 then
                   loadstring(game:HttpGet("https://raw.githubusercontent.com/Introvert1337/RobloxReleases/master/Scripts/Funky_Friday_Autoplayer.lua"))()
+        elseif game.PlaceId == 3233893879 then
+                  loadstring(game:HttpGet(("https://darkhub.xyz/remote-script.lua"), true))()
 	end
 	loader:Destroy()
 end)
