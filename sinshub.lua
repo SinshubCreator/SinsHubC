@@ -160,6 +160,8 @@ load.MouseButton1Down:connect(function()
                   loadstring(game:HttpGet("https://raw.githubusercontent.com/SinshubCreator/SinsHubb/main/jetpack"))() 
         elseif game.PlaceId == 7429434108 then
                   loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptRUs/Ryans/main/AnimeTapper.lua"))()
+        elseif game.PlaceId == 6447798030 then
+                  loadstring(game:HttpGet("https://raw.githubusercontent.com/Introvert1337/RobloxReleases/master/Scripts/Funky_Friday_Autoplayer.lua"))()
 	end
 	loader:Destroy()
 end)
