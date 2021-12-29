@@ -158,6 +158,8 @@ load.MouseButton1Down:connect(function()
                   loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
         elseif game.PlaceId == 7444263453 then
                   loadstring(game:HttpGet("https://raw.githubusercontent.com/SinshubCreator/SinsHubb/main/jetpack"))() 
+        elseif game.PlaceId == 7429434108 then
+                  loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptRUs/Ryans/main/AnimeTapper.lua"))()
 	end
 	loader:Destroy()
 end)
