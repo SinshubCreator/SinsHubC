@@ -149,7 +149,9 @@ load.MouseButton1Down:connect(function()
         elseif game.PlaceId == 4855457388 then
                   loadstring(game:HttpGet("https://github.com/LioK251/Scripts/raw/main/lazyhub.lua"))()
         elseif game.PlaceId == 990364410 then
-                   loadstring(game:HttpGet("https://raw.githubusercontent.com/FOXTROXHACKS/ElToro/main/Hub.lua"))()
+                  loadstring(game:HttpGet("https://raw.githubusercontent.com/FOXTROXHACKS/ElToro/main/Hub.lua"))()
+        elseif game.PlaceId == 292439477 then
+                  loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
 	end
 	loader:Destroy()
 end)
