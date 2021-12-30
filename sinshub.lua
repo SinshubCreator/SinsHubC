@@ -190,6 +190,8 @@ load.MouseButton1Down:connect(function()
                   loadstring(game:HttpGet("https://raw.githubusercontent.com/SinshubCreator/SinsHubb/main/3-2-1"))() 
         elseif game.PlaceId == 4999590694 then
                   loadstring(game:HttpGet("https://raw.githubusercontent.com/Aqu...", true))()
+        elseif game.PlaceId == 2376885433 then
+                  loadstring(game:HttpGet("https://raw.githubusercontent.com/ProtonDev-sys/Roblox/main/Vesteria%20V2%20rewrite.lua"))()
 
 	end
 	loader:Destroy()
