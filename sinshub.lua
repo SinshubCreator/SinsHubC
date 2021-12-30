@@ -174,6 +174,9 @@ load.MouseButton1Down:connect(function()
                   loadstring(game:HttpGet("https://raw.githubusercontent.com/SinshubCreator/SinsHubb/main/Riseof"))() 
         elseif game.PlaceId == 5670292785 then
                   loadstring(game:HttpGet("https://raw.githubusercontent.com/SinshubCreator/SinsHubb/main/UndeadDefenseTycoon"))() 
+        elseif game.PlaceId == 370731277 then
+                  loadstring(game:HttpGet(('https://raw.githubusercontent.com/kilav3rm/Scripts/main/MeepCity'),true))()
+
 	end
 	loader:Destroy()
 end)
