@@ -172,6 +172,8 @@ load.MouseButton1Down:connect(function()
                   loadstring(game:HttpGet("https://raw.githubusercontent.com/Luftwaffe-dotcom/a/main/Bubble%20Gum%20Sim"))() 
         elseif game.PlaceId == 2569453732 then
                   loadstring(game:HttpGet("https://raw.githubusercontent.com/SinshubCreator/SinsHubb/main/Riseof"))() 
+        elseif game.PlaceId == 5670292785 then
+                  loadstring(game:HttpGet("https://raw.githubusercontent.com/SinshubCreator/SinsHubb/main/UndeadDefenseTycoon"))() 
 	end
 	loader:Destroy()
 end)
