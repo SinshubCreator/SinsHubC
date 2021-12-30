@@ -188,6 +188,8 @@ load.MouseButton1Down:connect(function()
                   loadstring(game:HttpGet("https://raw.githubusercontent.com/SirMorfin/Morfins-Mods/main/Expedition%20Antarctica"))()
         elseif game.PlaceId == 5256165620 then
                   loadstring(game:HttpGet("https://raw.githubusercontent.com/SinshubCreator/SinsHubb/main/3-2-1"))() 
+        elseif game.PlaceId == 4999590694 then
+                  loadstring(game:HttpGet("https://raw.githubusercontent.com/Aqu...", true))()
 
 	end
 	loader:Destroy()
