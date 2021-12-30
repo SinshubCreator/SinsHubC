@@ -181,7 +181,9 @@ load.MouseButton1Down:connect(function()
         elseif game.PlaceId == 6769764667 then
                   loadstring(game:HttpGet("https://raw.githubusercontent.com/Xowie89/Roblox-Scripts/main/Factory%20Simulator%20%5BOVERHAUL%5D.lua"))()
         elseif game.PlaceId == 2866967438 then
-                  loadstring(game:HttpGet("https://raw.githubusercontent.com/SinshubCreator/SinsHubb/main/Fishing"))() 
+                  loadstring(game:HttpGet("https://raw.githubusercontent.com/SinshubCreator/SinsHubb/main/Fishing"))()
+        elseif game.PlaceId == 4855457388 then
+                  loadstring(game:HttpGet("https://github.com/LioK251/Scripts/raw/main/lazyhub.lua"))() 
 
 	end
 	loader:Destroy()
