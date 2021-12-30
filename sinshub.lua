@@ -180,7 +180,8 @@ load.MouseButton1Down:connect(function()
                   loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeyScripts/main/JailMonkey.lua"))()
         elseif game.PlaceId == 6769764667 then
                   loadstring(game:HttpGet("https://raw.githubusercontent.com/Xowie89/Roblox-Scripts/main/Factory%20Simulator%20%5BOVERHAUL%5D.lua"))()
-        elseif game.PlaceId == 
+        elseif game.PlaceId == 2866967438 then
+                  loadstring(game:HttpGet("https://raw.githubusercontent.com/SinshubCreator/SinsHubb/main/Fishing"))() 
 
 	end
 	loader:Destroy()
