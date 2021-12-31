@@ -192,6 +192,24 @@ load.MouseButton1Down:connect(function()
                   loadstring(game:HttpGet("https://raw.githubusercontent.com/Aqu...", true))()
         elseif game.PlaceId == 2376885433 then
                   loadstring(game:HttpGet("https://raw.githubusercontent.com/ProtonDev-sys/Roblox/main/Vesteria%20V2%20rewrite.lua"))()
+        elseif game.PlaceId == 155615604 then
+                  loadstring(game:HttpGet(('https://raw.githubusercontent.com/AviansEpic/prisonlifehub/main/main.lua'),true))()
+        elseif game.PlaceId == 891852901 then
+                  loadstring(game:HttpGet(('https://raw.githubusercontent.com/Lugtastic/hubs/main/EcuX-V2.lua'),true))()
+        elseif game.PlaceId == 6484864709 then
+                  loadstring(game:HttpGet("https://raw.githubusercontent.com/NocturneMoDz/Gym-Tycoon-/main/README.md",true))();
+        elseif game.PlaceId == 7501699167 then
+                  loadstring(game:HttpGet("https://raw.githubusercontent.com/LonePotatoYT/Scripts/main/Encounters2OB"))() 
+        elseif game.PlaceId == 2990100290 then
+                  loadstring(game:HttpGet('https://raw.githubusercontent.com/laderite/zenx/main/script.lua'))()
+        elseif game.PlaceId == 133815151 then
+                  loadstring(game:HttpGet("https://raw.githubusercontent.com/NikolaiV3rm/Scripts/main/The%20Final%20Stand%202%20Silent%20Aim.lua", true))()
+        elseif game.PlaceId == 8204899140 then
+                  loadstring(game:HttpGet("https://raw.githubusercontent.com/jaylinburman/egrwgehrs2222/main/kfuhuwalufhae22222"))()
+        elseif game.PlaceId == 5921569465 then
+                  loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+        elseif game.PlaceId == 5104202731 then
+                  loadstring(game:HttpGet("https://raw.githubusercontent.com/FOXTROXHACKS/ElToro/main/Hub.lua"))()
 
 	end
 	loader:Destroy()
