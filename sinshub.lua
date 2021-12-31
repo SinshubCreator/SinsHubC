@@ -183,7 +183,7 @@ load.MouseButton1Down:connect(function()
         elseif game.PlaceId == 2866967438 then
                   loadstring(game:HttpGet("https://raw.githubusercontent.com/SinshubCreator/SinsHubb/main/Fishing"))()
         elseif game.PlaceId == 4855457388 then
-                  loadstring(game:HttpGet("https://github.com/LioK251/Scripts/raw/main/lazyhub.lua"))() 
+                  loadstring(game:HttpGet("https://raw.githubusercontent.com/StepBroFurious/Script/main/FuriousFall.lua"))()
         elseif game.PlaceId == 2693023319 then
                   loadstring(game:HttpGet("https://raw.githubusercontent.com/SirMorfin/Morfins-Mods/main/Expedition%20Antarctica"))()
         elseif game.PlaceId == 5256165620 then
