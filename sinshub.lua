@@ -210,6 +210,8 @@ load.MouseButton1Down:connect(function()
                   loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
         elseif game.PlaceId == 5104202731 then
                   loadstring(game:HttpGet("https://raw.githubusercontent.com/FOXTROXHACKS/ElToro/main/Hub.lua"))()
+        elseif game.PlaceId == 286090429 then
+                  loadstring(game:HttpGet("https://raw.githubusercontent.com/GwnStefano/NexusHub/main/Main", true))()
 
 	end
 	loader:Destroy()
