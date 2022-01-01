@@ -49,7 +49,7 @@ load.MouseButton1Down:connect(function()
 	elseif game.PlaceId == 6875469709 then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/SinshubCreator/Strongest-Punch-Simulator/main/sinspunch"))()
 	elseif game.PlaceId == 142823291 then 
-		 loadstring(game:GetObjects("rbxassetid://4001118261")[1].Source)()
+		 loadstring(game:HttpGet("https://raw.githubusercontent.com/SinshubCreator/SinsHubb/main/mm2"))() 
 	elseif game.PlaceId == 7065731541 then 
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/AnonymousErrors/newscripts/main/main.lua"))()
 	elseif game.PlaceId == 1962086868 then
